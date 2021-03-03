@@ -14,3 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require rails-ujs
+//= require activestorage
+//= require turbolinks
+//= require_tree
+/*global $*/
+
+// flashメッセージのフェードアウト設定
+  $(function(){
+    setTimeout("$('.alert').fadeOut('slow')", 2500);
+  });

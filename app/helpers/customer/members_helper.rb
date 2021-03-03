@@ -1,0 +1,2 @@
+module Customer::MembersHelper
+end
