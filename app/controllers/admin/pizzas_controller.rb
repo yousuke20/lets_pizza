@@ -1,4 +1,5 @@
 class Admin::PizzasController < ApplicationController
+  before_action :authenticate_admin!
 
   def index
     @pizzas = Pizza.all.order(created_at: :desc)
