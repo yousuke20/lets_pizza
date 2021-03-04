@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="col mb-4">
+    <h1><%= @member.full_name %>さんの会員詳細</h1>
+  </div>
+  <div class="col mb-4">
+    <div class="row">
+      <label class="col-sm-3">会員ID</label>
+      <div class="col-sm-9"><%= @member.id %></div>
+    </div>
+    <div class="row">
+      <label class="col-sm-3">氏名</label>
+      <div class="col-sm-9"><%= @member.full_name %></div>
+    </div>
+    <div class="row">
+      <label class="col-sm-3">フリガナ</label>
+      <div class="col-sm-9"><%= @member.full_name_kana %></div>
+    </div>
+    <div class="row">
+      <label class="col-sm-3">メールアドレス</label>
+      <div class="col-sm-9"><%= @member.email %></div>
+    </div>
+    <div class="row">
+      <label class="col-sm-3">会員ステータス</label>
+      <div class="col-sm-9"><%= @member.id %></div>
+    </div>
+  </div>
+  <div class="col text-center">
+    <%= link_to edit_admin_member_path(@member) do %>
+      <span class="btn btn-success mr-5">会員情報を編集する</span>
+    <% end %>
+    <%= link_to admin_root_path do %>
+      <span class="btn btn-primary ml-5"><%= @member.full_name %>さんの注文履歴を見る</span>
+    <% end %>
+  </div>
+</div>

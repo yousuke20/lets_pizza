@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>ピザ詳細情報</h1>
+  <div class="row mt-5">
+    <div class="col-md-7">
+      <div class="row h4">
+        <label class="col">商品名</label>
+        <div class="col">
+          <%= @pizza.pizza_name %>
+        </div>
+      </div>
+      <div class="row h4">
+        <label class="col">税抜価格</label>
+        <div class="col">
+          <%= (@pizza.price).to_s(:delimited) %>円
+        </div>
+      </div>
+      <div class="row h4">
+        <label class="col">サイズ</label>
+        <div class="col">
+          <%= @pizza.pizza_size %>
+        </div>
+      </div>
+      <div class="row h4">
+        <label class="col">販売ステータス</label>
+        <div class="col">
+          <%= @pizza.sales_status %>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <%= link_to edit_admin_pizza_path(@pizza) do %>
+          <span class="btn btn-info">ピザ詳細情報を編集する</span>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <%= attachment_image_tag @pizza, :image, :fill, 500, 500, class: "img-fluid mx-auto" %>
+    </div>
+  </div>
+</div>
