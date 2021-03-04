@@ -9,8 +9,19 @@ class ApplicationController < ActionController::Base
     if resource == :admin
       flash[:success] = 'ログアウトしました！'
       new_admin_session_path
-    else
+    elsif resource == :member
       flash[:success] = 'ログアウトしました！'
+      root_path
+    end
+  end
+  
+  # ログイン後のパス設定 
+  def after_sign_in_path_for(resource)
+    if resource.class == Admin
+      flash[:success] = 'ログインしました！'
+      admin_root_path
+    elsif resource.class == Member
+      flash[:success] = 'ログインしました！'
       root_path
     end
   end

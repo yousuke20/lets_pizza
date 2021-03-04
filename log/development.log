@@ -4456,3 +4456,2578 @@ Processing by Admin::MembersController#index as HTML
 Completed 200 OK in 705ms (Views: 696.7ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 02:55:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 613ms (Views: 581.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 02:55:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-04 02:55:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."created_at" DESC[0m
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-04 02:55:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:22
+  Rendered admin/pizzas/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 89ms (Views: 80.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/pizzas/2" for 150.249.86.229 at 2021-03-04 02:55:11 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/pizzas/2/edit" for 150.249.86.229 at 2021-03-04 02:55:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:28
+  Rendering admin/pizzas/edit.html.erb within layouts/application
+  Rendered admin/pizzas/edit.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 148ms (Views: 143.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/2" for 150.249.86.229 at 2021-03-04 02:55:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-04 02:55:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/pizzas/3" for 150.249.86.229 at 2021-03-04 02:55:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-04 02:56:31 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:22
+  Rendered admin/pizzas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-04 02:56:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:22
+  Rendered admin/pizzas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/3" for 150.249.86.229 at 2021-03-04 02:57:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/2" for 150.249.86.229 at 2021-03-04 02:57:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/1" for 150.249.86.229 at 2021-03-04 02:57:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-04 02:57:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."created_at" DESC[0m
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-04 02:57:25 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:22
+  Rendered admin/pizzas/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 02:57:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-04 02:57:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xnuOSnUSR8s900z/dh+ee0kB7Q41q2jSZ6u62kq09O6/IkaL9nioMYCatjDojeCYZeOTL7hK99EKdhB2DFvCpg=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Update (0.2ms)[0m  [1m[33mUPDATE "admins" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admins"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2021-03-04 02:57:27.968190"], ["id", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 18ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 02:57:28 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 02:57:40 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_up" for 150.249.86.229 at 2021-03-04 02:57:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::RegistrationsController#new as HTML
+  Rendering admin/registrations/new.html.erb within layouts/application
+  Rendered admin/registrations/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 02:57:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_up" for 150.249.86.229 at 2021-03-04 02:58:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::RegistrationsController#new as HTML
+  Rendering admin/registrations/new.html.erb within layouts/application
+  Rendered admin/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 02:58:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 04:41:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+Completed 406 Not Acceptable in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Customer::HomesController#top is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.5) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 150.249.86.229 at 2021-03-04 04:42:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 319ms (Views: 317.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 04:42:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:42:51 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Missing partial customers/shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/lets_pizza/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.7.3/app/views"
+):
+    1: <h2>Sign up</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= render "customers/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+    7:     <%= f.label :email %><br />
+  
+app/views/customer/registrations/new.html.erb:4:in `block in _app_views_customer_registrations_new_html_erb__3982654114175060732_70301579555920'
+app/views/customer/registrations/new.html.erb:3:in `_app_views_customer_registrations_new_html_erb__3982654114175060732_70301579555920'
+Started GET "/" for 150.249.86.229 at 2021-03-04 04:42:56 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:42:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial customers/shared/_links with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/lets_pizza/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.7.3/app/views"
+):
+    23:   </div>
+    24: <% end %>
+    25: 
+    26: <%= render "customers/shared/links" %>
+  
+app/views/customer/sessions/new.html.erb:26:in `_app_views_customer_sessions_new_html_erb__2273599927379245088_70301582960120'
+Started GET "/" for 150.249.86.229 at 2021-03-04 04:43:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=nav-link" for 150.249.86.229 at 2021-03-04 04:43:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Parameters: {"class"=>"nav-link"}
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=nav-link" for 150.249.86.229 at 2021-03-04 04:45:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Parameters: {"class"=>"nav-link"}
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/layouts/application.html.erb:37: syntax error, unexpected tLABEL, expecting do or '{' or '('
+...k_to "About", about_path class: "nav-link" );@output_buffer....
+...                         ^~~~~~):
+  
+app/views/layouts/application.html.erb:37: syntax error, unexpected tLABEL, expecting do or '{' or '('
+Started GET "/?class=nav-link" for 150.249.86.229 at 2021-03-04 04:45:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Parameters: {"class"=>"nav-link"}
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 297ms (Views: 296.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 04:45:22 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:45:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Missing partial customers/shared/_error_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/lets_pizza/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.7.3/app/views"
+):
+    1: <h2>Sign up</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= render "customers/shared/error_messages", resource: resource %>
+    5: 
+    6:   <div class="field">
+    7:     <%= f.label :email %><br />
+  
+app/views/customer/registrations/new.html.erb:4:in `block in _app_views_customer_registrations_new_html_erb__2871215735116772523_46176660'
+app/views/customer/registrations/new.html.erb:3:in `_app_views_customer_registrations_new_html_erb__2871215735116772523_46176660'
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:46:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 322ms (Views: 305.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:46:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial customers/shared/_links with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/lets_pizza/app/views"
+  * "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.7.3/app/views"
+):
+    23:   </div>
+    24: <% end %>
+    25: 
+    26: <%= render "customers/shared/links" %>
+  
+app/views/customer/sessions/new.html.erb:26:in `_app_views_customer_sessions_new_html_erb__655760315725427515_69913880622880'
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:46:29 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:46:31 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:46:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:46:34 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:46:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 04:46:39 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 63.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 04:46:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 04:46:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:06:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 325ms (Views: 307.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:06:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:10:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:11:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:12:33 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:12:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:13:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:13:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:13:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:14:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:14:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:14:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:15:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:15:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:15:37 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:17:37 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:19:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:19:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:22:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:23:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:23:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:23:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:23:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:24:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:24:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYi8/767peF6yvz4+bXnMlPJ+l8E7Lm8vPY/ZqfWsc/gPcY9SXxAN/HPiJjGlFX3KqHR7pcVGjdQCUneGQKp1w==", "member"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Customer::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYi8/767peF6yvz4+bXnMlPJ+l8E7Lm8vPY/ZqfWsc/gPcY9SXxAN/HPiJjGlFX3KqHR7pcVGjdQCUneGQKp1w==", "member"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:25:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:25:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:27:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:28:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:30:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 378ms (Views: 376.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 05:30:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:30:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:30:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:30:51 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:40:29 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:41:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:41:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:41:56 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:42:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:42:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:43:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:46:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:47:11 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:48:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:49:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:50:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:51:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:51:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:51:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:51:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 05:51:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 67ms (Views: 57.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:51:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 05:51:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:52:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:52:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:52:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:52:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:52:39 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:52:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...bmit "ログイン, class: "btn btn-primary btn-block" );@ou...
+...                            ^~~
+/home/ec2-user/environment/lets_pizza/app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+...ン, class: "btn btn-primary btn-block" );@output_buffer.safe...
+...                             ^~~
+/home/ec2-user/environment/lets_pizza/app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...ss: "btn btn-primary btn-block" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/lets_pizza/app/views/customer/sessions/new.html.erb:34: unterminated string meets end of file
+          end
+              ^
+/home/ec2-user/environment/lets_pizza/app/views/customer/sessions/new.html.erb:34: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/customer/sessions/new.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/customer/sessions/new.html.erb:34: unterminated string meets end of file
+app/views/customer/sessions/new.html.erb:34: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:52:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:53:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 150.249.86.229 at 2021-03-04 05:53:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hfnRgb/ttvC7bg0QBKrWV8Ltq3NYswiB/NWnylN0PxFP+twSLtgkZ+lsKwfPQ+Ka+VG6wWYyLLCUvmEKSNVIbw==", "member"=>{"full_name"=>"鈴木陽介", "full_name_kana"=>"スズキヨウスケ", "email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規会員登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("full_name", "full_name_kana", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["full_name", "鈴木陽介"], ["full_name_kana", "スズキヨウスケ"], ["email", "brotherhood7362514@gmail.com"], ["encrypted_password", "$2a$12$kgl8F7LSxPUed.vdR5IZL.3Lrg5yi/xy5vgMA0swfGwSi1V5G2/me"], ["created_at", "2021-03-04 05:53:45.208372"], ["updated_at", "2021-03-04 05:53:45.208372"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 342ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:53:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:54:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:54:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:56:56 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.1ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 558ms (Views: 543.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 05:56:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KjeTH1JDIa1YOsPTrciwmGOUuaFqfjvfj4K0uNttBmBDgundpYTEe9M/t7OS6QJdGvySEPmHmFRjfcIAZbkeeA=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 15ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:56:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 05:57:11 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 05:57:12 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 05:57:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 05:57:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 05:57:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:57:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 05:57:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ikM4yCFLYUceDGmJnVRrpiHGPX4Rt//5SQVZfsyQ/imzWOm7kfS2cltjxh4eexI5UEjsCzQPNqUELECyKrmUmg==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 314ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 05:57:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:01:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:01:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IOVyFSIJZqEfNYCs8dlRvZXksJjKaUAqLZsPvO69bJN/APIsu3e9jHEcD8qctOEpNsi8m6V5h7QIDXlJgklCFA=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:01:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:01:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:01:28 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"idum0xwao5EbyNRzXBvf9oAclaOtgPV3nz9Sfyy8vRMI7a9SYoFVlARJeQURwEKmne05Cv/s0AGgETx/HivjIw==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 306ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:01:28 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:01:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n14Yzh61AfiPc6MLYIRZNJrO6iTvrfgp/6Hx0JzVyaEfHkFMIQhaBk6wj3GHT/rDRzUgIiQXvuNZkp8IET/Kvg=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:01:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 06:04:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 75.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:04:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:04:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:04:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h3AuqV3fsDSPGW3Ur+VuxjeWeP0jOMvhjP2hlPJaCoqLUzqcG5djA8QWIzsxkqV5AvP5Kcky7QEksucfx2+PfQ==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 305ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:04:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:07:12 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:07:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant Customer::SessionsController::Accessible):
+  
+app/controllers/customer/sessions_controller.rb:7:in `<class:SessionsController>'
+app/controllers/customer/sessions_controller.rb:3:in `<main>'
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:07:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant Customer::SessionsController::Accessible):
+  
+app/controllers/customer/sessions_controller.rb:7:in `<class:SessionsController>'
+app/controllers/customer/sessions_controller.rb:3:in `<main>'
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:08:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yZ08tjHReigv5OTt0y2cwVu3gjG99SlCqHH8EwaM6hwREOWmSaHFq2i0gLU1RnDzgzML4zW8XIhiAMF+j/VExw=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:08:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:09:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:09:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 590ms (Views: 582.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:09:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 141ms (Views: 129.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:09:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JLFu29UBZ0TAk5O1H/QyotsEnbSuUhjNC+9Pc7kFGOjgk5am4ux1ylASPzq5jB+E0CyeQlGAW4QUqxUhMLe+Ug==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 329ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:09:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:09:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lP47ZCKINez9Q12VgoGj8gK8OfnHWiTX6IH6gPRXg0+a8TxP/cI5aSucNKfZVlwc80v26P9PLemK3aoNE1Q14Q=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:09:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:09:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 67ms (Views: 59.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:10:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r0TW/kjDVOMW46QqTghRXKk10VPrVhej8kyDBwvS5M2Pc8Yn7mafjnIj+1WEu6FTkMFyJGBT6teFZCOhrSLmWw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 306ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:10:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-04 06:10:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."created_at" DESC[0m
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 06:10:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 59ms (Views: 49.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-04 06:10:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+nLfGc5bfrhjENxIdPlNhYR1hoXPcEVIzrQZZ5eBRi8XVfpkodmOH/LP4Vr5XDVQ4Ni9KVcE17sUPml9LLVdCg=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:10:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:10:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OjkRa7ID3F2epOyH2er2jLzva2jUoaZctRrmkqaIBB7f8R3f761TB7ky6XbIEn3J40uFCrlgJwvTSNhBVDgb4g==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 306ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:10:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-04 06:11:40 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IIriwCdG1wPVVMRH6Bb3/f2D6hsnOsKmoIzWZWAqefwTT3VFjhcY72RZ2jkWbTuH72Ybk0WeB8/LwCP4RPDrwg=="}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:11:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 300ms (Views: 296.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:12:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 505ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x00007ffab00284a8>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:13:29 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 558ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x00000000063de4f0>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:13:51 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 497ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x00000000077888c0>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:14:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x0000000007a2c3b0>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:15:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 499ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x000000000a122410>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:15:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 510ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `admin_url' for #<Admin::SessionsController:0x0000000007590040>
+Did you mean?  admin_pizza_url):
+  
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:232:in `polymorphic_method'
+actionpack (5.2.4.5) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:186:in `full_url_for'
+actionpack (5.2.4.5) lib/action_dispatch/routing/url_for.rb:169:in `url_for'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:110:in `_compute_redirect_to_location'
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:63:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:23:in `create'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:17:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"admin/pizzas"}, missing required keys: [:id]):
+  
+app/controllers/application_controller.rb:21:in `after_sign_in_path_for'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:17:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"telcDciTgI6FRdOtNiqtGhX5fd8zlON2C6jraWI09I5WvNuX9uGsOzFeRp2IyqTOYCuPDaEy93j/AyISAd7jTw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 314ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 06:17:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 300ms (Views: 293.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-04 06:18:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xanE4jU0kKjFIjPFE/mlX0IyU/GGMcIoaWKyKowfvB5WlGD9FWMGo4OIL0oQoVX+W5yy/1iMhUk6ypv+D6rjUA=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to 
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+actionpack (5.2.4.5) lib/action_controller/metal/redirecting.rb:59:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/flash.rb:58:in `redirect_to'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:66:in `block in redirect_to'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:65:in `redirect_to'
+turbolinks (5.2.1) lib/turbolinks/redirection.rb:12:in `redirect_to'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:80:in `block (2 levels) in respond_to_on_destroy'
+actionpack (5.2.4.5) lib/action_controller/metal/mime_responds.rb:203:in `respond_to'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:78:in `respond_to_on_destroy'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:31:in `destroy'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-04 06:19:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xanE4jU0kKjFIjPFE/mlX0IyU/GGMcIoaWKyKowfvB5WlGD9FWMGo4OIL0oQoVX+W5yy/1iMhUk6ypv+D6rjUA=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:19:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-04 06:19:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-04 06:19:22 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 71ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:19:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-04 06:19:31 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4USOjSaCH3Uan5+IbiqzKz1t1FRicsFcOPXUPD7/JCkZDxL9Q+6UoP9tdCmppBjiHYeKNc7gmLZsQMg/F5T8sw==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 305ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:19:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:21
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-04 06:19:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nWn+sANOIpFygHvwQoiWl6RWd/Mn6T4XcWXGuRIal5bLXmdKo5lMScAipw0CZOCwX8CYcfFXI4RoN3bQJQK4ow=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-04 06:19:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:19:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-04 06:19:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IxRjfkEbynZ54rdck2uB0pwtAgcB7Qgd+E56WmtUrH0vQqOvEprK4jMBgILBA2n4P8P8cyxr4WYo2nQPY09jvg==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 306ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 06:19:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 69ms (Views: 62.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-04 06:19:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."created_at" DESC[0m
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-04 06:19:54 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:9
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-04 06:19:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  Rendered admin/homes/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-04 06:20:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:9
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members/1/edit" for 150.249.86.229 at 2021-03-04 06:20:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:13
+  Rendering admin/members/edit.html.erb within layouts/application
+  Rendered admin/members/edit.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/admin/members/edit.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...r_path, method: :patch, local :true do |f| @output_buffer.sa...
+...                              ^
+/home/ec2-user/environment/lets_pizza/app/views/admin/members/edit.html.erb:53: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/admin/members/edit.html.erb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/admin/members/edit.html.erb:53: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-04 06:20:25 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:9
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+

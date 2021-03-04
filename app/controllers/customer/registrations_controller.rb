@@ -3,8 +3,7 @@
 class Customer::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  include Accessible
-  skip_before_action :check_user, only: :destroy
+  
 
   # GET /resource/sign_up
   # def new
@@ -61,4 +60,5 @@ class Customer::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+  
 end
