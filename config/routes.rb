@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   scope module: :customer do
     root to: 'homes#top'
     get '/about' => 'homes#about'
+    get '/shop' => 'homes#shop'
     
     resources :pizzas, only: [:index, :show]
     
@@ -39,8 +40,8 @@ Rails.application.routes.draw do
   
   namespace :admin do
     root to: 'homes#top'
-    resources :pizzas, except: [:destroy]
-    resources :members, only: [:index, :show, :edit, :update]
+    resources :pizzas
+    resources :members, only: [:index, :show, :edit, :update, :destroy]
     resources :orders, only: [:show, :update]
     resources :order_pizzas, only: [:update]
   end  

@@ -13,11 +13,9 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree
@@ -26,4 +24,44 @@
 // flashメッセージのフェードアウト設定
   $(function(){
     setTimeout("$('.alert').fadeOut('slow')", 2500);
+  });
+
+// 顧客トップ画面 スライドショーの設定
+  $(document).ready(function(){
+    $('#theTarget').skippr({
+      transition: 'slide',
+      speed: 1000,
+      easing: 'easeOutQuart',
+      navType: 'bubble',
+      childrenElementType: 'div',
+      arrows: true,
+      autoPlay: true,
+      autoPlayDuration: 3000,
+      keyboardOnAlways: true,
+      hidePrevious: false
+    });
+    
+  // スクロールによるフェードインの設定
+    $(window).scroll(function(){
+      const wHeight = $(window).height();
+      const scrollAmount = $(window).scrollTop();
+      $('.scrollanime').each(function(){
+        const targetPosition = $(this).offset().top;
+        if (scrollAmount > targetPosition - wHeight + 50) {
+          $(this).addClass("fadeInDown");
+        }
+      });
+    });
+    
+    // タブメニューの設定
+    $('#tab-contents .tab[id != "tab1"]').hide();
+    
+    $('#tab-menu a').on('click',function(event){
+      $('#tab-contents .tab').hide();
+      $('#tab-menu .active').removeClass("active");
+      $(this).addClass("active");
+      $($(this).attr("href")).show();
+      event.preventDefault();
+    });
+    
   });

@@ -24,6 +24,13 @@ class Admin::MembersController < ApplicationController
     end
   end
   
+  def destroy
+    @member = Member.find(params[:id])
+    @member.destroy
+    flash[:success] = "選択した顧客情報を削除しました！"
+    redirect_to admin_members_path
+  end
+  
 # 顧客データのストロングパラメータ設定 
   private
   

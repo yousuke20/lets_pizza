@@ -2,49 +2,49 @@
   <div class="row mb-4">
     <h1><%= @member.full_name %>さんの会員情報編集</h1>
   </div>
-  <div class="row mb-4">
-    <%= form_with model: @member, url: admin_member_path, method: :patch, local :true do |f| %>
-      <div class="row">
-        <label class="col-sm-4">会員ID</label>
-        <div class="col-sm-8">
+  <div class="col mb-4">
+    <%= form_with model: @member, url: admin_member_path, method: :patch, local: true do |f| %>
+      <div class="row my-1">
+        <label class="col-sm-3 col-form-label">会員ID</label>
+        <div class="col-sm-4">
           <%= @member.id %>
         </div>
       </div>
-      <div class="row">
-        <label class="col-sm-4">氏名</label>
-        <div class="col-sm-8">
-          <%= f.text_field :full_name, class: "form-cotrol" %>
+      <div class="row my-1">
+        <label class="col-sm-3 col-form-label">氏名</label>
+        <div class="col-sm-4">
+          <%= f.text_field :full_name, class: "form-control" %>
         </div>
       </div>
-      <div class="row">
-        <label class="col-sm-4">フリガナ</label>
-        <div class="col-sm-8">
-          <%= f.text_field :full_name_kana, class: "form-cotrol" %>
+      <div class="row my-1">
+        <label class="col-sm-3 col-form-label">フリガナ</label>
+        <div class="col-sm-4">
+          <%= f.text_field :full_name_kana, class: "form-control" %>
         </div>
       </div>
-      <div class="row">
-        <label class="col-sm-4">メールアドレス</label>
-        <div class="col-sm-8">
-          <%= f.text_field :email, class: "form-cotrol" %>
+      <div class="row my-1">
+        <label class="col-sm-3 col-form-label">メールアドレス</label>
+        <div class="col-sm-4">
+          <%= f.text_field :email, class: "form-control" %>
         </div>
       </div>
-      <div class="row form-group">
-        <label class="col-sm-4">会員ステータス</label>
-        <div class="col-sm-8">
-          <div class="fomr-check form-check-inline">
-            <label>
+      <div class="row form-group my-2">
+        <label class="col-sm-3 col-form-label">会員ステータス</label>
+        <div class="col-sm-4">
+          <div class="form-check form-check-inline">
+            <label class="col-form-label">
               <%= f.radio_button :withdrawal_status, :有効, class: "form-check-input" %>有効
             </label>
           </div>
-          <div class="fomr-check form-check-inline">
-            <label>
+          <div class="form-check form-check-inline">
+            <label class="col-form-label">
               <%= f.radio_button :withdrawal_status, :退会, class: "form-check-input" %>退会
             </label>
           </div>
         </div>
       </div>
-      <div class="form-group text-center">
-        <%= f.submit "編集内容を保存", class: "btn btn-lg btn-success" %>
+      <div class="form-group text-center mt-4">
+        <%= f.submit "編集内容を保存", class: "btn btn-lg btn-outline-success" %>
       </div>
     <% end %>
   </div>

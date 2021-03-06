@@ -21,15 +21,20 @@
     </div>
     <div class="row">
       <label class="col-sm-3">会員ステータス</label>
-      <div class="col-sm-9"><%= @member.id %></div>
+      <div class="col-sm-9"><%= @member.withdrawal_status %></div>
     </div>
   </div>
-  <div class="col text-center">
-    <%= link_to edit_admin_member_path(@member) do %>
-      <span class="btn btn-success mr-5">会員情報を編集する</span>
-    <% end %>
-    <%= link_to admin_root_path do %>
-      <span class="btn btn-primary ml-5"><%= @member.full_name %>さんの注文履歴を見る</span>
-    <% end %>
+  <div class="row text-center">
+    <div class="col-sm-3">
+      <%= link_to "会員情報を編集する", edit_admin_member_path(@member), class: "btn btn-success" %>
+    </div>
+    <div class="col-sm-3">
+      <%= link_to "会員情報を削除する", admin_member_path(@member), method: :delete, class: "btn btn-outline-danger" %>
+    </div>
+    <div class="col-sm-3">
+      <%= link_to admin_root_path do %>
+        <span class="btn btn-primary"><%= @member.full_name %>さんの注文履歴を見る</span>
+      <% end %>
+    </div>
   </div>
 </div>

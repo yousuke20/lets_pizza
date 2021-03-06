@@ -17,5 +17,109 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// navbarを固定した事による、header~main要素間の調整
+  body {
+    padding-top: 50px;
+  }
+  .container {
+    margin-top: 50px;
+  }
 
+// 顧客トップ画面(#containerについては、about・shopページでも使っている)
+  #container {
+    height: 500px;
+    width: 100%;
+  }
+  .image1 {
+    background-image: url(image1.jpg);
+  }
+  .image2 {
+    background-image: url(image2.jpg);
+  }
+  .image3 {
+    background-image: url(image3.jpg);
+  }
+  .image4 {
+    background-image: url(image4.jpg);
+  }
+  .image5 {
+    background-image: url(image5.jpg);
+  }  
+  
+  // 顧客アバウト画面
+  .about {
+    background-image: url(image9.jpg);
+  }
+  .about-container {
+    color: white;
+    position: absolute;
+    right: 15%;
+    left: 10%;
+    bottom: 1rem;
+    z-index: 10;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  #tab-menu{
+    display: flex;
+  }
+  #tab-menu li {
+    list-style-type: none;
+    width: calc(100%/3);
+  }
+  #tab-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #000;
+  }
+  #tab-menu .active {
+    background: #fff;
+    color: #000;
+  }
+  #tab-contents {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #tab-contents .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+  }
+  #tab-contents p {
+    color: #000;
+    line-height: 2.5;
+  }
+// --------------------------------------
+
+/*1.フェードインアニメーションの指定*/
+  .scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+  .fadeInDown {
+      animation-name: fadeInDown;
+      animation-duration: 2.5s;
+      animation-fill-mode: forwards;
+    
+  }
+  @keyframes fadeInDown {
+      0% {
+          opacity: 0;
+      }
+      100% {
+      opacity: 1;
+      transform: translate(0);
+      }
+  }
   
