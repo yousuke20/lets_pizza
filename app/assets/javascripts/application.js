@@ -64,4 +64,14 @@
       event.preventDefault();
     });
     
+    // 画面トップへ戻るボタンの設定
+    $(function(){
+      $('#scroll-back a').on('click',function(event){
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        event.preventDefault();
+      });
+    });
+    
   });

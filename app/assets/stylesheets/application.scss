@@ -103,6 +103,15 @@
     color: #000;
     line-height: 2.5;
   }
+  .fas {
+    color: black;
+  }
+  
+  #scroll-back {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
 // --------------------------------------
 
 /*1.フェードインアニメーションの指定*/
