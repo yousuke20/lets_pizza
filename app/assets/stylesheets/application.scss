@@ -26,9 +26,7 @@
   body {
     padding-top: 50px;
   }
-  .container {
-    margin-top: 50px;
-  }
+  
 
 // 顧客トップ画面(#containerについては、about・shopページでも使っている)
   #container {
@@ -111,6 +109,17 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
+  }
+  
+  // ピザメニュー画面
+  .pizza-index {
+    background-image: url(sunrise-photos.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+  }
+  .menu-background {
+    background-color: white;
   }
 // --------------------------------------
 
