@@ -1,16 +1,48 @@
 <div class="pizza-index img-fluid">
   <div class="container text-center py-5">
-  <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto menu-background">
-      <h1><strong>ピザメニュー</strong></h1>
-      <p class="lead">
-        Aboutページで紹介したピザの一覧<br>
-        会員登録後であれば、ピザの注文が可能です！
-      </p>
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto menu-background p-3">
+        <h1><strong>ピザメニュー</strong></h1>
+        <p class="lead">
+          Aboutページで紹介したピザの一覧です。<br>
+          会員登録後であれば、ピザの注文が可能です！
+        </p>
+        <p>
+          <a href="/members/sign_up" class="btn btn-primary my-2">会員登録する</a>
+        </p>
+      </div>
     </div>
   </div>
 </div>
-</div>
-<div class="album py-5">
-  lplplplp
+<div class="py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <% @pizzas.each do |pizza| %>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top img-fluid" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspecRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
+              <%= attachment_image_tag pizza, :image %>
+            </svg>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <strong>商品名 : 
+                    <%= link_to pizza_path(pizza) do %>
+                      <%= pizza.pizza_name %>
+                    <% end %>  
+                  </strong>
+                </div>
+                <div class="row my-1">
+                  <strong>販売サイズ : <%= pizza.pizza_size %></strong>
+                </div>
+                <div class="row">
+                  <strong>税込金額 : <%= ((pizza.price)*1.1).floor.to_s(:delimited) %> 円</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>

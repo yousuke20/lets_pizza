@@ -50,8 +50,11 @@
   }  
   
   // 顧客アバウト画面
-  .about {
+  .about-picture {
     background-image: url(image9.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
   }
   .about-container {
     color: white;
