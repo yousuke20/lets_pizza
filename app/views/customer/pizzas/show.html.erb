@@ -1,0 +1,35 @@
+<div class="container my-5">
+  <div class="card col-lg-6 col-sm-8 mx-auto">
+    <%= form_with model: @cart_item, url: cart_items_path(pizza_id: @pizza), method: :post, local: true do |f| %>
+    <div class="text-center"> 
+      <svg class="bd-placeholder-img card-img-top img-fluid" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspecRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
+        <%= attachment_image_tag @pizza, :image %>
+      </svg>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">
+        商品名 : <%= @pizza.pizza_name %>
+      </h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        販売サイズ : <%= @pizza.pizza_size %>
+      </li>
+      <li class="list-group-item">
+        税込価格 : <%= (@pizza.price * 1.1).floor.to_s(:delimited) %> 円
+      </li>
+      <div class="d-flex justify-content-between align-items-center p-3">
+        <div class="btn-group">
+          <%= link_to "ピザメニューへ戻る", pizzas_path, class: "btn btn-sm btn-outline-secondary" %>
+        </div>
+        <% if member_signed_in? %>
+        <div class="btn-group">
+          <%= f.select :number_of_sheets, [*1..5], class: "form-control" %><span class="d-flex align-items-center mx-1">枚を</span>
+          <%= f.submit 'カートに入れる', class: "btn btn-sm btn-outline-success" %>
+        </div>
+        <% end %>
+      </div>
+    </ul>
+  <% end %>  
+  </div>
+</div>

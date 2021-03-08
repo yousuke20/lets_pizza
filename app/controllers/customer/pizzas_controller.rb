@@ -5,6 +5,7 @@ class Customer::PizzasController < ApplicationController
   end
   
   def show
-    
+    @pizza = Pizza.find(params[:id])
+    @cart_item = CartItem.new
   end
 end

@@ -27,6 +27,9 @@
                   <%= link_to "ピザ一覧", pizzas_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
+                  <%= link_to "ショピングカート", cart_items_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
                   <%= link_to "ログアウト", destroy_member_session_path, method: :delete, class: "nav-link" %>
                 </li>
               <% elsif admin_signed_in? %>
@@ -75,10 +78,10 @@
       <%= yield %>
     </main>
     <footer class="container border-top">
-      <p class="float-right mt-5">
+      <p class="float-right my-5">
         <%= link_to '管理者ログインはこちらから', new_admin_session_path %>
       </p>
-      <p class="mt-5">
+      <p class="my-5">
         © 2021 Let's Pizza! Company, Inc.
       </p>
     </footer>

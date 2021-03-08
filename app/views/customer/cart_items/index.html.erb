@@ -1,0 +1,73 @@
+<div class="bg-light">
+  <div class="container mx-auto pt-5">
+    <div class="col">
+      <h1 class="text-center"><i class="fas fa-shopping-cart fa-2x"></i><strong>ショッピングカート</strong></h1>
+    </div>
+    <div class="row mt-5">
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>商品名</th>
+            <th>単価(税込)</th>
+            <th>枚数</th>
+            <th>枚数変更</th>
+            <th>小計</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @cart_items.each do |cart_item| %>
+            <tr>
+              <td>
+                <%= cart_item.pizza.pizza_name %>
+              </td>
+              <td>
+                <%= (cart_item.pizza.price * 1.1).floor.to_s(:delimited) %> 円
+              </td>
+              <td>
+                <%= cart_item.number_of_sheets %> 枚
+              </td>
+              <td>
+                <%= form_with model: @cart_item, url: cart_item_path(cart_item), method: :patch, local: true do |f| %>
+                  <%= f.select :number_of_sheets, [*1..5], class: "form-control" %><span class="mx-1">枚に</span>
+                  <%= f.submit '変更', class: "btn btn-sm btn-outline-success" %>
+                <% end %>  
+              </td>
+              <td>
+                <%= ((cart_item.pizza.price * 1.1).floor * (cart_item.number_of_sheets).to_i).to_s(:delimited) %> 円
+              </td>
+              <td>
+                <%= link_to "カートから削除", cart_items_path(cart_item), method: :delete, class: "btn btn-sm btn-outline-danger" %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div class="row py-4">
+      <div class="col text-right">
+        <%= link_to "カート内商品を全て削除する", cart_items_destroy_all_path, method: :delete, class: "btn btn-danger" %>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-sm-2">
+        <%= link_to "ショッピングを続ける", pizzas_path, class: "btn btn-primary" %>
+      </div>
+      <div class="col-sm-4 ml-auto">
+        <table class="table table-bordered">
+          <tr>
+            <td class="table-dark">合計金額</td>
+            <td>
+              <%= @total_price.to_s(:delimited) %> 円
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col text-center">
+        <%= link_to "注文情報入力へ進む", new_order_path, class: "btn btn-lg btn-success" %>
+      </div>
+    </div>
+  </div>
+</div>
