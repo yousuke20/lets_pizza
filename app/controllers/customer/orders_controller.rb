@@ -6,25 +6,26 @@ class Customer::OrdersController < ApplicationController
     @order = Order.new
   end
   
-  # 注文情報ページで入力した支払方法、配達先データを、sessionで保持
+  # 注文情報入力画面 支払方法及び配達先の入力処理
+  def create_delivery
+    @delivery = Delivery.new(create_delivery_params)
+    @delivery.member_id = current_member.id
+    if @delivery.save
+      flash[:success] = "配達情報をセーブしました！"
+      redirect_to orders_confirm_path
+    end
+  end
+  
+  # 注文確認画面
   def confirm
     @order = current_member.orders
-    
-    session[:payment_method] = params[:payment_method]
-    if params[:add] = "new_address"
-      session[:delivery_postal_code] = params[:delivery_postal_code]
-      session[:delivery_address] = params[:delivery_address]
-      session[:delivery_name] = params[:delivery_name]
-    elsif params[:add] = "my_address"
-      session[:delivery_address] = params[:delivery]
-    else
-      render :new
-    end
+    @delivery_person = Delivery.find_by(member_id: current_member.id)
+    @total_price = calculate(current_member)
   end
   
   # 注文情報の保存
   def create
-    
+    @order = Order.new
   end
   
   # 注文完了画面
@@ -42,6 +43,10 @@ class Customer::OrdersController < ApplicationController
   
   # 注文データのストロングパラメータ
   private
+  
+  def create_delivery_params
+    params.permit(:member_id, :name, :postal_code, :address, :telephone_number, :payment_method)
+  end
   
   def calculate(member)
     total_price = 0
