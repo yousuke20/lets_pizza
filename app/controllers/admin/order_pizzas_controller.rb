@@ -11,11 +11,13 @@ class Admin::OrderPizzasController < ApplicationController
       @order.update(order_status: "配達準備中")
       flash[:success] = "調理ステータスを「調理完了」に、注文ステータスを「配達準備中」に変更しました！"
       redirect_to admin_order_path(@order_pizzas.order.id)
+      
   # 全ての調理ステータスを「調理完了」にすると、 注文ステータスが「配達準備完了」に更新される処理
     elsif @order.order_pizza.count == @order.order_pizza.where(cooking_status: "調理完了").count
       @order.update(order_status: "配達準備完了")
       flash[:success] = "全ての調理ステータスを「調理完了」に、注文ステータスを「配達準備完了」に変更しました！"
       redirect_to admin_order_path(@order_pizzas.order.id)
+      
   # 上記2つ以外の場合
     else
       flash[:success] = "調理ステータスを更新しました！"

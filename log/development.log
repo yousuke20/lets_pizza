@@ -36185,3 +36185,1799 @@ Completed 200 OK in 150ms (Views: 148.3ms | ActiveRecord: 0.3ms)
 
 
   [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 150.249.86.229 at 2021-03-09 10:17:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 954ms (Views: 945.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-09 10:17:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 195ms (Views: 194.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-09 10:17:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 146ms (Views: 132.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/members/assets/image6.jpg" for 150.249.86.229 at 2021-03-09 10:17:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Started GET "/members/assets/image8.jpg" for 150.249.86.229 at 2021-03-09 10:17:49 +0000
+Started GET "/members/assets/image7.jpg" for 150.249.86.229 at 2021-03-09 10:17:49 +0000
+ActionController::RoutingError (No route matches [GET] "/members/assets/image6.jpg"):
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image8.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-09 10:17:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyFLAXB+7cwqSnmOmojKC4M7OiA8HfsJXya/arA4UwdCsICKYHfQjawRESEDbiWw1AbntpN6UA2Na8JheNavYQ==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 330ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-09 10:17:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.8ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:22
+Completed 200 OK in 131ms (Views: 130.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-09 10:17:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 114ms (Views: 92.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:18:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 127ms (Views: 120.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pizzas/1" for 150.249.86.229 at 2021-03-09 10:18:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/show.html.erb:25
+  Rendered customer/pizzas/show.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 305ms (Views: 265.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/attachments/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-09 10:18:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-09 10:18:06 +0000] GET "/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 404 4.5ms
+
+Started POST "/cart_items?pizza_id=1" for 150.249.86.229 at 2021-03-09 10:18:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xaKptwFO//+Rw6yTC/mHalo/loUB8wLu4qkjRJ8LtX78/EjIt4MA97jYijqL+cSWjscCRS/ocYmdWm0L5WImOw==", "cart_item"=>{"number_of_sheets"=>"2"}, "commit"=>"カートに入れる", "pizza_id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/cart_items_controller.rb:8
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:8
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:8
+  [1m[36mCartItem Create (2.2ms)[0m  [1m[32mINSERT INTO "cart_items" ("pizza_id", "member_id", "number_of_sheets", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["pizza_id", 1], ["member_id", 1], ["number_of_sheets", 2], ["created_at", "2021-03-09 10:18:10.384205"], ["updated_at", "2021-03-09 10:18:10.384205"]]
+  ↳ app/controllers/customer/cart_items_controller.rb:8
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/cart_items_controller.rb:8
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/cart_items
+Completed 302 Found in 28ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-09 10:18:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:55
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 107ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-09 10:18:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:85
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:91
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:97
+  Rendered customer/orders/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 130ms (Views: 110.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-09 10:18:33 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Dg69C9i6DiR69/2HF/C01N7f14kw7rfF7zgocAJNRGz12WjL+qIQhkpsR2Hx/n+Dm/3ItTj2cverSQw7o3kgw==", "payment_method"=>"クレジットカード", "delivery"=>"new_address", "session"=>{"postal_code"=>"202-0021", "address"=>"Nishitokyo City, Tokyo Higashi Fushimi 5-6-14", "name"=>"ウハウハ", "telephone_number"=>"08047244238", "delivery_postal_code"=>"", "delivery_address"=>"", "delivery_name"=>"", "delivery_telephone_number"=>""}, "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:99
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:100
+  Rendering customer/orders/confirm.html.erb within layouts/application
+  Rendered customer/orders/confirm.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 148ms (Views: 137.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/orders" for 150.249.86.229 at 2021-03-09 10:18:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FP6+8lFcaAYQpDd4m6hcITnBg+Q/m3simlkZlWQq/hM7+Ryq7BsM+BLU8epQdTeoHewH5EvigwAq8liUzvwrsQ==", "commit"=>"注文を確定する"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:40
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:40
+  [1m[36mDelivery Create (2.5ms)[0m  [1m[32mINSERT INTO "deliveries" ("member_id", "name", "postal_code", "address", "telephone_number", "created_at", "updated_at", "payment_method") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["member_id", 1], ["name", "ウハウハ"], ["postal_code", "202-0021"], ["address", "Nishitokyo City, Tokyo Higashi Fushimi 5-6-14"], ["telephone_number", 8047244238], ["created_at", "2021-03-09 10:18:38.815780"], ["updated_at", "2021-03-09 10:18:38.815780"], ["payment_method", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:40
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:40
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:99
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:100
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:53
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:53
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:53
+  [1m[36mOrder Create (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("member_id", "delivery_id", "delivery_address", "delivery_name", "delivery_telephone_number", "billing_amount", "payment_method", "created_at", "updated_at", "delivery_postal_code") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["member_id", 1], ["delivery_id", 2], ["delivery_address", "Nishitokyo City, Tokyo Higashi Fushimi 5-6-14"], ["delivery_name", "ウハウハ"], ["delivery_telephone_number", 8047244238], ["billing_amount", 3960], ["payment_method", 1], ["created_at", "2021-03-09 10:18:38.834808"], ["updated_at", "2021-03-09 10:18:38.834808"], ["delivery_postal_code", "202-0021"]]
+  ↳ app/controllers/customer/orders_controller.rb:53
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:53
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:63
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:63
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:63
+  [1m[36mOrderPizza Create (2.7ms)[0m  [1m[32mINSERT INTO "order_pizzas" ("order_id", "pizza_id", "price", "number_of_sheets", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["order_id", 1], ["pizza_id", 1], ["price", 1800], ["number_of_sheets", 2], ["created_at", "2021-03-09 10:18:38.865278"], ["updated_at", "2021-03-09 10:18:38.865278"]]
+  ↳ app/controllers/customer/orders_controller.rb:63
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:63
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:67
+  [1m[36mCartItem Destroy (0.1ms)[0m  [1m[31mDELETE FROM "cart_items" WHERE "cart_items"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/customer/orders_controller.rb:67
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:67
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/orders/complete
+Completed 302 Found in 86ms (ActiveRecord: 22.6ms)
+
+
+Started GET "/orders/complete" for 150.249.86.229 at 2021-03-09 10:18:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#complete as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/complete.html.erb within layouts/application
+  Rendered customer/orders/complete.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:19:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 116ms (Views: 115.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-09 10:19:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F/fRtPcq9dFaNyL8lRMc0qqeFLCQcUhIrmwzLHrba6Q48HPsSm2RL1hH5G5ezndbjrOQsOQIsGoex3It0A2+Bg=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 22ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-09 10:19:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 142ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-09 10:19:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 119ms (Views: 111.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/assets/image6.jpg" for 150.249.86.229 at 2021-03-09 10:19:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/admin/assets/image8.jpg" for 150.249.86.229 at 2021-03-09 10:19:08 +0000
+Started GET "/admin/assets/image7.jpg" for 150.249.86.229 at 2021-03-09 10:19:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image8.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image6.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-09 10:19:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/aujxF9pcb5NS3jJdk477575hWpLxmayO4pvll8QyDMnidRPcyMQCNHFpET6pQyj35hRotRnNVxaGxSadeGqVQ==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 311ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-09 10:19:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 135ms (Views: 129.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:19:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  Rendered admin/orders/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/admin" for 150.249.86.229 at 2021-03-09 10:23:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 730ms (Views: 704.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-09 10:23:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 120ms (Views: 115.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:23:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  Rendered admin/orders/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:24:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  Rendered admin/orders/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:25:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  Rendered admin/orders/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/admin/orders/show.html.erb:100: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:26:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  Rendered admin/orders/show.html.erb within layouts/application (34.9ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Order:0x00007f5cadafda78>):
+     7:       <label class="col-sm-3">購入者</label>
+     8:       <div class="col-sm-9">
+     9:         <%= link_to admin_member_path(@order.member_id) do %>
+    10:           <%= @order.full_name %>
+    11:         <% end %>
+    12:       </div>
+    13:     </div>
+  
+app/views/admin/orders/show.html.erb:10:in `block in _app_views_admin_orders_show_html_erb__3692982079228324248_70018013848520'
+app/views/admin/orders/show.html.erb:9:in `_app_views_admin_orders_show_html_erb__3692982079228324248_70018013848520'
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:27:12 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  Rendered admin/orders/show.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    53:           </tr>
+    54:         </thead>
+    55:         <tbody>
+    56:           <% @order_pizza.each do |order_pizza| %>
+    57:             <tr>
+    58:               <td>
+    59:                 <%= order_pizza.pizza.pizza_name %>
+  
+app/views/admin/orders/show.html.erb:56:in `_app_views_admin_orders_show_html_erb__3692982079228324248_23362860'
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:27:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  Rendered admin/orders/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    53:           </tr>
+    54:         </thead>
+    55:         <tbody>
+    56:           <%= @order_pizza.each do |order_pizza| %>
+    57:             <tr>
+    58:               <td>
+    59:                 <%= order_pizza.pizza.pizza_name %>
+  
+app/views/admin/orders/show.html.erb:56:in `_app_views_admin_orders_show_html_erb__3692982079228324248_70018017406260'
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:27:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  Rendered admin/orders/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    53:           </tr>
+    54:         </thead>
+    55:         <tbody>
+    56:           <% @order_pizza.each do |order_pizza| %>
+    57:             <tr>
+    58:               <td>
+    59:                 <%= order_pizza.pizza.pizza_name %>
+  
+app/views/admin/orders/show.html.erb:56:in `_app_views_admin_orders_show_html_erb__3692982079228324248_70018010748460'
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:28:05 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  Rendered admin/orders/show.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    53:           </tr>
+    54:         </thead>
+    55:         <tbody>
+    56:           <% @order_pizza.each do |order_pizza| %>
+    57:             <tr>
+    58:               <td>
+    59:                 <%= order_pizza.pizza.pizza_name %>
+  
+app/views/admin/orders/show.html.erb:56:in `_app_views_admin_orders_show_html_erb__3692982079228324248_70018019019860'
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:28:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 149ms (Views: 141.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-09 10:28:33 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:9
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 128ms (Views: 122.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:28:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mn/oZoqB85xJKHFRHI2BsJ2Jj14SJrqhFRlYzzRhLltNiQNuEJiaBItDUzuXF26trZjwhzAy5S16r31rKM6ZTA==", "order"=>{"order_status"=>"入金確認"}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/orders_controller.rb:12
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:12
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT  "deliveries".* FROM "deliveries" WHERE "deliveries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:12
+  [1m[36mOrder Update (2.9ms)[0m  [1m[33mUPDATE "orders" SET "order_status" = ?, "updated_at" = ? WHERE "orders"."id" = ?[0m  [["order_status", 1], ["updated_at", "2021-03-09 10:28:41.538967"], ["id", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:12
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/orders_controller.rb:12
+  [1m[36mOrderPizza Update All (3.9ms)[0m  [1m[33mUPDATE "order_pizzas" SET "cooking_status" = 0 WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:16
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/orders/1
+Completed 302 Found in 41ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:28:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 117ms (Views: 112.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:29:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 153ms (Views: 147.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:29:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 117ms (Views: 111.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:30:28 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 755ms (Views: 714.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:31:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 123ms (Views: 116.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:32:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 126ms (Views: 120.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:32:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 761ms (Views: 720.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:32:39 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 116ms (Views: 110.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:32:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 120ms (Views: 114.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:33:05 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 127ms (Views: 120.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-09 10:33:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:33:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 127ms (Views: 121.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:33:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 120ms (Views: 114.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:35:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 138ms (Views: 132.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:35:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 124ms (Views: 119.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:35:35 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 133ms (Views: 128.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:35:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 676ms (Views: 634.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:36:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (1.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 117ms (Views: 110.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:36:53 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (2.3ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 133ms (Views: 124.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:37:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (1.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 132ms (Views: 123.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:37:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 112ms (Views: 106.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:37:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 123ms (Views: 117.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:37:54 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 110ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:38:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 139ms (Views: 132.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:38:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 124ms (Views: 118.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:38:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 133ms (Views: 127.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:38:56 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (2.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 114ms (Views: 106.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:39:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 153ms (Views: 147.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:39:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:56
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:59
+  Rendered admin/orders/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 119ms (Views: 114.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:39:51 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:57
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:60
+  Rendered admin/orders/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 116ms (Views: 110.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:40:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:57
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:60
+  Rendered admin/orders/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 122ms (Views: 116.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/orders/1" for 150.249.86.229 at 2021-03-09 10:40:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/orders_controller.rb:5
+  Rendering admin/orders/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:10
+  [1m[36mOrderPizza Load (0.1ms)[0m  [1m[34mSELECT "order_pizzas".* FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/orders/show.html.erb:57
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/orders/show.html.erb:60
+  Rendered admin/orders/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 181ms (Views: 175.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-09 10:40:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:9
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 106ms (Views: 98.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-09 10:40:40 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 126ms (Views: 119.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/members/1/edit" for 150.249.86.229 at 2021-03-09 10:40:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:13
+  Rendering admin/members/edit.html.erb within layouts/application
+  Rendered admin/members/edit.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 190ms (Views: 185.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-09 10:40:49 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" ORDER BY "members"."created_at" DESC[0m
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 209ms (Views: 203.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-09 10:40:50 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 104ms (Views: 98.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-09 10:46:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 557ms (Views: 535.5ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-09 10:46:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2J7NmldGOa1zK9fQNPe27TMLksKTAha3pKxEXDCfdWGnaCaSzV9QNbFA9bq/bVnwAxrtG7EWSTvLGmH4LDDCdg=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-09 10:46:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_up" for 150.249.86.229 at 2021-03-09 10:46:35 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::RegistrationsController#new as HTML
+  Rendering admin/registrations/new.html.erb within layouts/application
+  Rendered admin/registrations/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-09 10:46:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 134ms (Views: 111.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-09 10:46:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kW35rtZqsfrKDESTm1lGHLCUzWT8GuC7PY9fx6mdouXMnBNRMPMzXKTdm2fq6lW77d49orE0uH1UXOPtR2Bc6w==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 318ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-09 10:46:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.0ms)
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:22
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-09 10:46:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 104ms (Views: 99.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/assets/image6.jpg" for 150.249.86.229 at 2021-03-09 10:46:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/members/assets/image7.jpg" for 150.249.86.229 at 2021-03-09 10:46:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image6.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/members/assets/image8.jpg" for 150.249.86.229 at 2021-03-09 10:46:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image8.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-09 10:47:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 143ms (Views: 127.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-09 10:47:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:85
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:91
+  [1m[36mCACHE Delivery Load (0.0ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:97
+  Rendered customer/orders/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 160ms (Views: 140.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:47:40 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 109ms (Views: 108.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas/1" for 150.249.86.229 at 2021-03-09 10:47:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/show.html.erb:25
+  Rendered customer/pizzas/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 138ms (Views: 127.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/attachments/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-09 10:47:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-09 10:47:45 +0000] GET "/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 404 4.3ms
+
+Started GET "/attachments/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-09 10:47:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-09 10:47:46 +0000] GET "/b96cc02d1b70aa5f16817118dbc20a3d1ef16d36/store/flll/200/200/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 404 1.5ms
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:51:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 633ms (Views: 621.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-09 10:52:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 159ms (Views: 151.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-09 10:52:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-09 10:54:28 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 119ms (Views: 115.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:54:35 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-09 10:54:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 123ms (Views: 109.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-09 10:55:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:56:31 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 124ms (Views: 122.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-09 10:56:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:48
+  Rendered customer/pizzas/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.2ms)
+
+
