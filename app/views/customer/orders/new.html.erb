@@ -6,7 +6,7 @@
         <strong>注文情報入力</strong>
       </h1>
     </div>
-    <%= form_with model: @delivery, url: orders_create_delivery_path, method: :post, local: true do |f| %>
+    <%= form_with scope: :session, url: orders_confirm_path, local: true do |f| %>
       <div class="col my-5 mx-auto">
         <h2 class="col text-center mb-4"><strong>支払方法</strong></h2>
         <div class="row d-flex justify-content-center form-group">
@@ -24,43 +24,86 @@
           </div>
         </div>
       </div>
-    <h2 class="col text-center mb-4"><strong>お届け先</strong></h2>
-    <div class="row pb-5">
-      <div class="col-sm-7 mx-auto">
-        <h3 class="text-center">フォームに各項目を入力してください。</h3>
-        <div class="card">
-          <div class="card-body">
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-text">〒</span>
-                <%= f.text_field :postal_code, class: "form-control", placeholder: "郵便番号" %>
+      <h2 class="col text-center mb-4"><strong>お届け先</strong></h2>
+      <div class="row pb-5">
+        <div class="col-sm-6">
+          <div class="form-check mb-2">
+            <%= radio_button_tag :delivery, "new_address", class: "form-check-input"%>
+            <label class="h5 form-check-label"><strong>本サイトのご利用が初めての方</strong></label>
+          </div>
+          <h6 class="text-center">
+            フォームに各項目を入力してください。
+          </h6>
+          <div class="card">
+            <div class="card-body">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">〒</span>
+                  <%= f.text_field :postal_code, class: "form-control", placeholder: "郵便番号" %>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
-                <%= f.text_field :address, class: "form-control", placeholder: "住所" %>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                  <%= f.text_field :address, class: "form-control", placeholder: "住所" %>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-signature"></i></span>
-                <%= f.text_field :name, class: "form-control", placeholder: "宛名" %>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-signature"></i></span>
+                  <%= f.text_field :name, class: "form-control", placeholder: "宛名" %>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
-                <%= f.text_field :telephone_number, class: "form-control", placeholder: "電話番号" %>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+                  <%= f.text_field :telephone_number, class: "form-control", placeholder: "電話番号" %>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row my-3 d-flex justify-content-center">
+        <div class="col-sm-6">
+          <div class="form-check mb-2">
+            <%= radio_button_tag :delivery, "my_address", class: "form-check-input"%>
+            <label class="h5 form-check-label"><strong>本サイトをご利用されたことのある方</strong></label>
+          </div>
+          <h6 class="text-center">
+            セレクトフォームから配達先を選択してください。
+          </h6>
+          <div class="card">
+            <div class="card-body">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">〒</span>
+                  <%= f.collection_select :delivery_postal_code, Delivery.where(member_id: current_member.id), :id, :postal_code, class: "form-control", include_blank: "--選択してください--" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                  <%= f.collection_select :delivery_address, Delivery.where(member_id: current_member.id), :id, :address, class: "form-control", include_blank: "--選択してください--" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-signature"></i></span>
+                  <%= f.collection_select :delivery_name, Delivery.where(member_id: current_member.id), :id, :name, class: "form-control", include_blank: "--選択してください--" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+                  <%= f.collection_select :delivery_telephone_number, Delivery.where(member_id: current_member.id), :id, :telephone_number, class: "form-control", include_blank: "--選択してください--" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3 mx-auto">
           <%= f.submit '注文確認画面へ進む', class: "btn btn-primary" %>
         </div>
-      <% end %>
       </div>
-    </div>
+    <% end %>  
   </div>
 </div>

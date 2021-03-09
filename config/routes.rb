@@ -21,7 +21,6 @@ Rails.application.routes.draw do
     delete '/cart_items/destroy_all' => 'cart_items#destroy_all'    # カート内商品の全削除
     resources :cart_items, only: [:index, :create, :update, :destroy]
 
-    post '/orders/create_delivery' => 'orders#create_delivery'  # 情報入力画面にて配達先の登録
     get '/orders/confirm' => 'orders#confirm'       # 注文情報確認画面
     post '/orders/confirm' => 'orders#confirm'      # 注文情報確認画面の裏処理
     get '/orders/complete' => 'orders#complete'     # 注文完了画面

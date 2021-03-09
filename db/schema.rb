@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_09_023943) do
+ActiveRecord::Schema.define(version: 2021_03_09_055831) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_023943) do
     t.integer "number_of_sheets", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "cooking_status", default: 0, null: false
   end
 
   create_table "orders", force: :cascade do |t|
