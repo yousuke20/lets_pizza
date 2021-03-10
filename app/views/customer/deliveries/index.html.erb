@@ -10,7 +10,7 @@
       <div class="card">
         <div class="card-body">
         <h4 class="card-title text-center my-3">配達先新規登録</h4>
-        <%= form_with model: @delivery, url: deliveries_path, method: :post, local: true do |f| %>  
+        <%= form_with url: deliveries_path, method: :post, local: true do |f| %>  
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-text">〒</span>

@@ -1,1 +1,111 @@
-mko
+<div class="container my-5">
+  <div class="col">
+    <h1 class="text-center">
+      <i class="fas fa-file-alt fa-2x"></i>
+      <strong>注文詳細</strong>
+    </h1>
+  </div>
+  <div class="row my-5">
+    <div class="col-sm-8">
+      <h3 class="mb-4">注文情報</h3>
+      <table class="table table-hover table-bordered">
+        <tbody>
+          <tr>
+            <td class="table-warning">注文日</td>
+            <td>
+              <%= @order.created_at.to_s(:datetime_jp)%>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">郵便番号</td>
+            <td>
+              <%= @order.delivery_postal_code %>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">住所</td>
+            <td>
+              <%= @order.delivery_address %>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">宛名</td>
+            <td>
+              <%= @order.delivery_name %>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">電話番号</td>
+            <td>
+              <%= @order.delivery_telephone_number %>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">支払方法</td>
+            <td>
+              <%= @order.payment_method %>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-warning">注文ステータス</td>
+            <td>
+              <%= @order.order_status %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-4 ml-auto">
+      <h3 class="mb-4">請求情報</h3>
+      <table class="table table-hover table-bordered">
+        <tr>
+          <td class="table-warning">
+            <strong>請求金額</strong>
+          </td>
+          <td>
+            <strong>
+              <%= (@order.billing_amount).to_s(:delimited) %> 円
+            </strong>
+          </td>
+        </tr>
+      </table>  
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col-sm-8">
+      <h3 class="mb-4">注文商品内容</h3>
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr class="table-warning">
+            <th>商品</th>
+            <th>単価(税込)</th>
+            <th>枚数</th>
+            <th>小計</th>
+            <th>調理ステータス</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @order_pizzas.each do |order_pizza| %>
+          <tr>
+            <td>
+              <%= order_pizza.pizza.pizza_name %>
+            </td>
+            <td>
+              <%= (order_pizza.price * 1.1).floor.to_s(:delimited) %> 円
+            </td>
+            <td>
+              <%= order_pizza.number_of_sheets %> 枚
+            </td>
+            <td>
+              <%= ((order_pizza.price * 1.1)*(order_pizza.number_of_sheets)).floor.to_s(:delimited) %> 円
+            </td>
+            <td>
+              <%= order_pizza.cooking_status %>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

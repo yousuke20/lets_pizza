@@ -80,11 +80,12 @@ class Customer::OrdersController < ApplicationController
   end
   
   def index
-    
+    @orders = Order.where(member_id: current_member.id)
   end
   
   def show
-  
+    @order = Order.find(params[:id])
+    @order_pizzas = @order.order_pizzas
   end
   
   # 注文データのストロングパラメータ
