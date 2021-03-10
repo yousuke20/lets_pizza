@@ -49,7 +49,7 @@
     background-image: url(image5.jpg);
   }  
   
-  // 顧客アバウト画面
+  // 顧客アバウト画面、顧客オススメショップ画面(tab menu)
   .about-picture {
     background-image: url(image9.jpg);
     background-size: cover;
@@ -135,7 +135,6 @@
       animation-name: fadeInDown;
       animation-duration: 2.5s;
       animation-fill-mode: forwards;
-    
   }
   @keyframes fadeInDown {
       0% {

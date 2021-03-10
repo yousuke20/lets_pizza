@@ -1,4 +1,4 @@
-<div class="container w-25 text-center mt-5">
+<div class="container w-25 text-center my-5">
   <h1 class="h2 my-5">管理者ログイン</h1>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email Address" %>
@@ -17,8 +17,5 @@
       <%= f.submit "Log in", class: "btn btn-lg btn-primary btn-block" %>
     </div>
   <% end %>
-  <div class="mt-5">
-    <%= link_to '管理者新規登録はこちらへ', new_admin_registration_path %>
-  </div>
 </div>
 
