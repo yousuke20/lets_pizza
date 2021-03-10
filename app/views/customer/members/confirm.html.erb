@@ -1,0 +1,17 @@
+<div class="container py-5">
+  <div class="row d-flex justify-content-center">
+    <h4><strong>本当に退会しますか？</strong></h4>
+  </div>
+  <div class="row d-flex justify-content-center my-4">
+    <p class="text-center">
+      退会すると、会員登録情報や配達先情報、<br>
+      これまでの購入履歴が閲覧できなくなります。
+    </p>
+  </div>
+  <div class="row text-center my-4">
+    <div class="col">
+      <%= link_to "退会しない", member_path(current_member), class: "btn btn-primary mr-2" %>
+      <%= link_to "退会する", members_withdrawal_path, method: :patch, class: "btn btn-danger ml-2" %>
+    </div>
+  </div>
+</div>

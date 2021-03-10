@@ -35,5 +35,11 @@ class ApplicationController < ActionController::Base
       :full_name_kana,
       :withdrawal_status
       ])
+      
+    devise_parameter_sanitizer.permit(:account_update,
+    keys: [
+      :full_name,
+      :full_name_kana
+      ])
   end
 end

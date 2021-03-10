@@ -1,0 +1,45 @@
+<div class="container my-5">
+  <div class="col">
+    <h1 class="text-center">
+      <i class="fas fa-tools fa-2x"></i>
+      <strong>配達先情報編集</strong>
+    </h1>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-5 mx-auto">
+      <div class="card">
+        <div class="card-body">
+        <%= form_with model: @delivery, url: delivery_path, method: :patch, local: true do |f| %>  
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text">〒</span>
+              <%= f.text_field :postal_code, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+              <%= f.text_field :address, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-signature"></i></span>
+              <%= f.text_field :name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+              <%= f.text_field :telephone_number, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <%= f.submit "配達先情報を更新する", class: "btn btn-success" %>
+          </div>
+        <% end %>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

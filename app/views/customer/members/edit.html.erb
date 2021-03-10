@@ -5,4 +5,36 @@
       <strong><%= current_member.full_name %>さんの登録情報編集</strong>
     </h1>
   </div>
+  <div class="col-sm-6 mx-auto mt-4">
+    <div class="card">
+      <div class="card-body">
+        <%= form_with model: @member, url: member_path(@member), method: :patch, local: true do |f| %>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <%= f.text_field :full_name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-signature"></i></span>
+              <%= f.text_field :full_name_kana, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.submit "ユーザー情報を更新する", class: "btn btn-outline-success btn-block" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 d-flex justify-content-center">
+    <%= link_to "退会する", members_confirm_path, class: "btn btn-outline-danger" %>
+  </div>
 </div>

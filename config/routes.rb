@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     get '/orders/complete' => 'orders#complete'     # 注文完了画面
     resources :orders, only: [:index, :new, :create, :show]
     
-    resources :deliveries, only: [:index, :creare, :edit, :update, :destroy]
+    resources :deliveries, only: [:index, :create, :edit, :update, :destroy]
   end
   
 # <------------------------------------------>

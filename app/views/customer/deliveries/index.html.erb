@@ -1,0 +1,83 @@
+<div class="container my-5">
+  <div class="col">
+    <h1 class="text-center">
+      <i class="fas fa-truck fa-2x"></i>
+      <strong>配達先一覧 / 新規登録</strong>
+    </h1>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-5 mx-auto">
+      <div class="card">
+        <div class="card-body">
+        <h4 class="card-title text-center my-3">配達先新規登録</h4>
+        <%= form_with model: @delivery, url: deliveries_path, method: :post, local: true do |f| %>  
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text">〒</span>
+              <%= f.text_field :postal_code, class: "form-control", placeholder: "郵便番号" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+              <%= f.text_field :address, class: "form-control", placeholder: "住所" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-signature"></i></span>
+              <%= f.text_field :name, class: "form-control", placeholder: "宛名" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
+              <%= f.text_field :telephone_number, class: "form-control", placeholder: "電話番号" %>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <%= f.submit "配達先新規登録", class: "btn btn-success" %>
+          </div>
+        <% end %>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col mx-auto">
+      <table class="table table-border table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>郵便番号</th>
+            <th>住所</th>
+            <th>宛名</th>
+            <th>電話番号</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @deliveries.each do |delivery| %>
+          <tr>
+            <td>
+              <%= delivery.postal_code %>
+            </td>
+            <td>
+              <%= delivery.address %>
+            </td>
+            <td>
+              <%= delivery.name %>
+            </td>
+            <td>
+              <%= delivery.telephone_number %>
+            </td>
+            <td>
+              <%= link_to "編集", edit_delivery_path(delivery), class: "btn btn-outline-success" %>
+              <%= link_to "削除", delivery_path(delivery), method: :delete, class: "btn btn-outline-danger" %>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -5,4 +5,57 @@
       <strong><%= current_member.full_name %>さんのマイページ</strong>
     </h1>
   </div>
+  <div class="row my-5">
+    <div class="col-sm-6">
+      <table class="table table-hover table-bordered">
+        <tbody>
+          <tr>
+            <td class="table-dark">氏名</td>
+            <td><%= current_member.full_name %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">カナ</td>
+            <td><%= current_member.full_name_kana %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">メールアドレス</td>
+            <td><%= current_member.email %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-4 ml-auto">
+      <table class="table table-borderless">
+        <tbody>
+          <tr>
+            <td>
+              <%= link_to edit_member_path(current_member) do %>
+                <div class="btn btn-outline-success fas fa-user-cog">
+                  登録情報を編集する
+                </div>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= link_to deliveries_path do %>
+                <div class="btn btn-outline-primary fas fa-truck">
+                  配達先情報一覧
+                </div>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= link_to orders_path do %>
+                <div class="btn btn-outline-primary fas fa-box-open">
+                  注文履歴一覧
+                </div>
+              <% end %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
