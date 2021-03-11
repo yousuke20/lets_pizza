@@ -74,4 +74,27 @@
       });
     });
     
+  // google map apiの設定
+    $(function initMap(){
+      
+    // map1,marker1はピッツェリア GG 吉祥寺の緯度経度
+      var map1 = new google.maps.Map(document.getElementById('map'),{
+      // 中心点緯度経度(吉祥寺駅)
+      center: new google.maps.LatLng(35.7021253, 139.5773068),
+      // ズームレベル
+      zoom: 15,
+      // 距離メモリの表示
+      scaleControl: true,
+      // 地図の種類
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      
+      var marker1 = new google.maps.Marker({
+        // マーカーを置く緯度経度
+        position: new google.maps.LatLng(35.7008301, 139.578633),
+        map: map1
+      });
+    });
+    
+      
   });
