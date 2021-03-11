@@ -20,6 +20,7 @@
 //= require turbolinks
 //= require_tree
 /*global $*/
+/*global google $*/
 
 // flashメッセージのフェードアウト設定
   $(function(){
@@ -74,11 +75,11 @@
       });
     });
     
-  // google map apiの設定
+  // Google Map APIの設定
     $(function initMap(){
       
-    // map1,marker1はピッツェリア GG 吉祥寺の緯度経度
-      var map1 = new google.maps.Map(document.getElementById('map'),{
+    // map1 ピッツェリア GG 吉祥寺の緯度経度
+      var map1 = new google.maps.Map(document.getElementById('map1'),{
       // 中心点緯度経度(吉祥寺駅)
       center: new google.maps.LatLng(35.7021253, 139.5773068),
       // ズームレベル
@@ -89,12 +90,50 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       
-      var marker1 = new google.maps.Marker({
-        // マーカーを置く緯度経度
+      var marker = new google.maps.Marker({
+        // マーカーを置く緯度経度(お店の場所)
         position: new google.maps.LatLng(35.7008301, 139.578633),
         map: map1
       });
+  
+  
+    // map2 FREY's Famous Pizzeriaの緯度経度
+      var map2 = new google.maps.Map(document.getElementById('map2'),{
+      // 中心点緯度経度(六本木駅)
+      center: new google.maps.LatLng(35.6627251, 139.7312165),
+      // ズームレベル
+      zoom: 15,
+      // 距離メモリの表示
+      scaleControl: true,
+      // 地図の種類
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      
+      var marker = new google.maps.Marker({
+        // マーカーを置く緯度経度(お店の場所)
+        position: new google.maps.LatLng(35.6652052, 139.7326674),
+        map: map2
+      });
+      
+      
+    // map3 ピッツェリア ダ・アオキの緯度経度
+      var map3 = new google.maps.Map(document.getElementById('map3'),{
+      // 中心点緯度経度(豊島園駅)
+      center: new google.maps.LatLng(35.7420538,139.6491104),
+      // ズームレベル
+      zoom: 14,
+      // 距離メモリの表示
+      scaleControl: true,
+      // 地図の種類
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      
+      var marker = new google.maps.Marker({
+        // マーカーを置く緯度経度(お店の場所)
+        position: new google.maps.LatLng(35.7478447,139.6494077),
+        map: map3
+      });
+      
     });
     
-      
   });
