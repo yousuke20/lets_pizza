@@ -46040,3 +46040,999 @@ Processing by Customer::HomesController#shop as HTML
 Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 150.249.86.229 at 2021-03-11 10:25:50 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1459ms (Views: 1450.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 10:26:22 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 10:26:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:27:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:27:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:27:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:27:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shop" for 150.249.86.229 at 2021-03-11 10:27:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#shop as HTML
+  Rendering customer/homes/shop.html.erb within layouts/application
+  Rendered customer/homes/shop.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shop" for 150.249.86.229 at 2021-03-11 10:27:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#shop as HTML
+  Rendering customer/homes/shop.html.erb within layouts/application
+  Rendered customer/homes/shop.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 10:40:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:20
+  Rendered customer/pizzas/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 157ms (Views: 150.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/52b72a7c8aaf1839183c5e37a689995de3d56fe5/store/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-11 10:40:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:40:44 +0000] GET "/52b72a7c8aaf1839183c5e37a689995de3d56fe5/store/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 200 104.5ms
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-11 10:46:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (86.6ms)
+Completed 200 OK in 827ms (Views: 766.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-11 10:46:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0CL4ygkAYFqY+zQUpS+r+Cui0UYi5Nv8KUGRJFzxIv46gBxicoOLO9lpXPJnVc+FbAOqQeY/svCRiaulEp1jeg==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 323ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-11 10:46:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."created_at" DESC[0m
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 173ms (Views: 159.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:46:24 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 142ms (Views: 131.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:46:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 209ms (Views: 204.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:47:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M94cj5AOn79gDYAiMGEpcdq9az5knE79trEWc/4FL6++Ti7QTYUZytU5oZlurS1O9cDtoSeZhkq31FVgRF1B0g==", "pizza"=>{"pizza_name"=>"マルゲリータピッツァ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4d9639c88 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-x062ln.jpg>, @original_filename="amirali-mirhashemian-zTxiTnTag78-unsplash.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"amirali-mirhashemian-zTxiTnTag78-unsplash.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"1400", "pizza_size"=>"small（直径23cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.8ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["pizza_name", "マルゲリータピッツァ"], ["image_id", "a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06"], ["price", 1400], ["created_at", "2021-03-11 10:47:08.167423"], ["updated_at", "2021-03-11 10:47:08.167423"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 26ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:47:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 175ms (Views: 172.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/pizzas/2" for 150.249.86.229 at 2021-03-11 10:47:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 162ms (Views: 153.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/31f81025afcecd34993d3bd8d6a054c844643951/store/fill/500/500/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" for 150.249.86.229 at 2021-03-11 10:47:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:47:13 +0000] GET "/31f81025afcecd34993d3bd8d6a054c844643951/store/fill/500/500/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" 200 2473.8ms
+
+Started GET "/admin/pizzas/2/edit" for 150.249.86.229 at 2021-03-11 10:47:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:28
+  Rendering admin/pizzas/edit.html.erb within layouts/application
+  Rendered admin/pizzas/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 182ms (Views: 171.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:47:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 106ms (Views: 101.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:47:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/dVTiQA81AFBs2lrSPG6i05VqCUoJ+Hc7BkQm59hgl1wRWHW3bdSdPSHSNAWPb60YSguumsiKWvtfFOIJTnsIA==", "pizza"=>{"pizza_name"=>"クアトロ・フォルマッジ", "image"=>"{}", "price"=>"2300", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (0.6ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "クアトロ・フォルマッジ"], ["image_id", nil], ["price", 2300], ["pizza_size", 1], ["created_at", "2021-03-11 10:47:52.838747"], ["updated_at", "2021-03-11 10:47:52.838747"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: pizzas.image_id may not be NULL: INSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)):
+  
+app/controllers/admin/pizzas_controller.rb:14:in `create'
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:48:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xa0qt7v+yhI0XmjyipUNmfGvJKTSPn3lA6bQYoX/CzSTdU5S7X0bQe7JX3wqvxJ3AJDcDDCmY4d+WkGpW0rwWw==", "pizza"=>{"pizza_name"=>"クアトロ・フォルマッジ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4e47e5bd0 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-1lyeas5.jpeg>, @original_filename="クアトロフォルマッジ.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x82\xAF\xE3\x82\xA2\xE3\x83\x88\xE3\x83\xAD\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xAB\xE3\x83\x9E\xE3\x83\x83\xE3\x82\xB7\xE3\x82\x99.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"2300", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.8ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "クアトロ・フォルマッジ"], ["image_id", "d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b"], ["price", 2300], ["pizza_size", 1], ["created_at", "2021-03-11 10:48:19.206950"], ["updated_at", "2021-03-11 10:48:19.206950"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 15ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:48:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.8ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/pizzas/3" for 150.249.86.229 at 2021-03-11 10:48:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admin/pizzas_controller.rb:24
+  Rendering admin/pizzas/show.html.erb within layouts/application
+  Rendered admin/pizzas/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 138ms (Views: 133.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/35fff4d7b565066e26dccf4c60b82cde3a069a60/store/fill/500/500/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" for 150.249.86.229 at 2021-03-11 10:48:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:48:23 +0000] GET "/35fff4d7b565066e26dccf4c60b82cde3a069a60/store/fill/500/500/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" 200 57.4ms
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:48:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 125ms (Views: 121.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:48:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUgld6IA6c51kJkImf5pZ13slSfovQ7hwK1U51zi82cM2Bcof4tvu8CkuLPHMm1YcpETuKu4xlbByBf05rqdGg==", "pizza"=>{"pizza_name"=>"パルマ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4e4a72560 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-1pplsqn.jpeg>, @original_filename="パルマの作り方をマスターして手作りピッツァに挑戦しよう！ _ 食・料理 _ オリーブオイルをひとまわし.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x8F\xE3\x82\x9A\xE3\x83\xAB\xE3\x83\x9E\xE3\x81\xAE\xE4\xBD\x9C\xE3\x82\x8A\xE6\x96\xB9\xE3\x82\x92\xE3\x83\x9E\xE3\x82\xB9\xE3\x82\xBF\xE3\x83\xBC\xE3\x81\x97\xE3\x81\xA6\xE6\x89\x8B\xE4\xBD\x9C\xE3\x82\x8A\xE3\x83\x92\xE3\x82\x9A\xE3\x83\x83\xE3\x83\x84\xE3\x82\xA1\xE3\x81\xAB\xE6\x8C\x91\xE6\x88\xA6\xE3\x81\x97\xE3\x82\x88\xE3\x81\x86\xEF\xBC\x81 _ \xE9\xA3\x9F\xE3\x83\xBB\xE6\x96\x99\xE7\x90\x86 _ \xE3\x82\xAA\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\x95\xE3\x82\x99\xE3\x82\xAA\xE3\x82\xA4\xE3\x83\xAB\xE3\x82\x92\xE3\x81\xB2\xE3\x81\xA8\xE3\x81\xBE\xE3\x82\x8F\xE3\x81\x97.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"3050", "pizza_size"=>"large（直径33cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.5ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "パルマ"], ["image_id", "42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac"], ["price", 3050], ["pizza_size", 2], ["created_at", "2021-03-11 10:48:52.786566"], ["updated_at", "2021-03-11 10:48:52.786566"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 14ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:48:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 112ms (Views: 109.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:49:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 125ms (Views: 120.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:49:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3OryyuNYEC0RVGHXYghpSk6tZe+g4Y6nwHVxnFedEKFResCVPtOWWKRgQGw8xG11YdDjcOPkRhDBEDKP7cV+3A==", "pizza"=>{"pizza_name"=>"菜園風のオルトラーナ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4d8a18b98 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-1j6y6vo.jpeg>, @original_filename="Ortolana 菜園風のオルトラーナ.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"Ortolana \xE8\x8F\x9C\xE5\x9C\x92\xE9\xA2\xA8\xE3\x81\xAE\xE3\x82\xAA\xE3\x83\xAB\xE3\x83\x88\xE3\x83\xA9\xE3\x83\xBC\xE3\x83\x8A.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"2700", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.1ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "菜園風のオルトラーナ"], ["image_id", "6581d772090481285c3bea6da8f317ba26b7d3c33c6dbde13631e0e91f4d"], ["price", 2700], ["pizza_size", 1], ["created_at", "2021-03-11 10:49:32.620301"], ["updated_at", "2021-03-11 10:49:32.620301"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 19ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:49:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 110ms (Views: 107.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:49:42 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:50:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cr1Oe9HXF7pMIe31LNIsxUNFHrUvhfQKvs/ZSqZa9S//LXwkDFyRz/kVzE5yHij6bDiYKmyAPL2/qppZHAKbUg==", "pizza"=>{"pizza_name"=>"ビアンカ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4d96f6428 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-1l8m7bt.jpg>, @original_filename="ビアンカ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x92\xE3\x82\x99\xE3\x82\xA2\xE3\x83\xB3\xE3\x82\xAB.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"1200", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.6ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "ビアンカ"], ["image_id", "8ebc0aa375107e705c6238a2c899532bc2a30eefeeb7e161d281b80e0ab0"], ["price", 1200], ["pizza_size", 1], ["created_at", "2021-03-11 10:50:04.267824"], ["updated_at", "2021-03-11 10:50:04.267824"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 15ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:50:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 111ms (Views: 108.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:50:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 128ms (Views: 123.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:50:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fXA8hzEQyL8d9rjho/AgVIe+kQpv3ceCJpxzBXta/fbw4A7Y7JtOyqjCmVr9PCRrqMMXlSzYDzUn+TAWwQKTiw==", "pizza"=>{"pizza_name"=>"フォンターナ・バンビーノ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4d93347b8 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-11ky8qu.jpg>, @original_filename="フォンターナ バンビーノ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xB3\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x8A \xE3\x83\x8F\xE3\x82\x99\xE3\x83\xB3\xE3\x83\x92\xE3\x82\x99\xE3\x83\xBC\xE3\x83\x8E.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"2400", "pizza_size"=>"large（直径33cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (2.5ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "フォンターナ・バンビーノ"], ["image_id", "f338e0ba255fc658f60c30773d35f9ea00e64574f7009b915763a671c0a9"], ["price", 2400], ["pizza_size", 2], ["created_at", "2021-03-11 10:50:59.598692"], ["updated_at", "2021-03-11 10:50:59.598692"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 16ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:50:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 108ms (Views: 105.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:51:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 113ms (Views: 108.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:51:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"idyAK0LrddP00KJFyjcjGS3+RSWOOcWFHDrX91R8Cf8ETLJ0n2DzpkHkg/6U+ycmAoPDus08DTIdX5Tk7iRngg==", "pizza"=>{"pizza_name"=>"ビスマルク", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4daa2d1b8 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-6oqgtd.jpeg>, @original_filename="ビスマルク ピザ.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x92\xE3\x82\x99\xE3\x82\xB9\xE3\x83\x9E\xE3\x83\xAB\xE3\x82\xAF \xE3\x83\x92\xE3\x82\x9A\xE3\x82\xB5\xE3\x82\x99.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"2500", "pizza_size"=>"small（直径23cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.7ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["pizza_name", "ビスマルク"], ["image_id", "5fe889d403c41c79e97dcaff791edbbd2cb11ca29a11c286c5e3555f6d32"], ["price", 2500], ["created_at", "2021-03-11 10:51:41.826295"], ["updated_at", "2021-03-11 10:51:41.826295"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 14ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:51:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:51:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 119ms (Views: 115.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 10:52:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:42
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:52:36 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.7ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:42
+Completed 200 OK in 112ms (Views: 110.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:53:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pae7r6Hmdjq8isuObstLC4/wqI946kdG/Ygq3+HygCewN4nwfG3wTwm+6jUwB080oI0uEDvvj/H87WnMW6ruWg==", "pizza"=>{"pizza_name"=>"サルモーネ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4d93661a0 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-1c3qx59.jpg>, @original_filename="pizza-1815498_1280.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"pizza-1815498_1280.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"1900", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (1.1ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "サルモーネ"], ["image_id", "ed592c518407ec13c9a21bd772ad188cef1965317ed80834d2a29fbff557"], ["price", 1900], ["pizza_size", 1], ["created_at", "2021-03-11 10:53:01.413939"], ["updated_at", "2021-03-11 10:53:01.413939"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 17ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:53:01 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:53:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:42
+Completed 200 OK in 113ms (Views: 110.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:53:25 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (1.5ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:42
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:53:45 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:54:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6W8x9AqiPWXHftFD/3MLjQb1YSUlVc3KCrUYWZMyT0Fk/wOr1ym7EHJK8Pihvw+yKYjnumZQBX0L0FtKKWohPA==", "pizza"=>{"pizza_name"=>"ペスカトーレ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4da152070 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-bxpggq.jpeg>, @original_filename="マルゲリータ アラ ペスカトーレ@高槻 VULCANO.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x9E\xE3\x83\xAB\xE3\x82\xB1\xE3\x82\x99\xE3\x83\xAA\xE3\x83\xBC\xE3\x82\xBF \xE3\x82\xA2\xE3\x83\xA9 \xE3\x83\x98\xE3\x82\x9A\xE3\x82\xB9\xE3\x82\xAB\xE3\x83\x88\xE3\x83\xBC\xE3\x83\xAC@\xE9\xAB\x98\xE6\xA7\xBB VULCANO.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"3500", "pizza_size"=>"large（直径33cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "ペスカトーレ"], ["image_id", "5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0"], ["price", 3500], ["pizza_size", 2], ["created_at", "2021-03-11 10:54:15.429312"], ["updated_at", "2021-03-11 10:54:15.429312"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 13ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:54:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 202ms (Views: 199.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/pizzas/new" for 150.249.86.229 at 2021-03-11 10:54:25 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/new.html.erb within layouts/application
+  Rendered admin/pizzas/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 98ms (Views: 93.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:54:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j8T5ESOJbIl2yyyly1x1t+lhTDwUbcR8Trbs6RmelNICVMtO/gLq/MP/DR6VkHGIxhzKo1doDMtP06/6o8b6rw==", "pizza"=>{"pizza_name"=>"ボスカイオーラ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000000059dc060 @tempfile=#<Tempfile:/tmp/RackMultipart20210311-8346-f1s3qj.jpg>, @original_filename="ボスカイオーラ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pizza[image]\"; filename=\"\xE3\x83\x9B\xE3\x82\x99\xE3\x82\xB9\xE3\x82\xAB\xE3\x82\xA4\xE3\x82\xAA\xE3\x83\xBC\xE3\x83\xA9.jpg\"\r\nContent-Type: image/jpeg\r\n">, "price"=>"2600", "pizza_size"=>"medium（直径28cm）", "sales_status"=>"販売中"}, "commit"=>"新規登録"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("pizza_name", "image_id", "price", "pizza_size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_name", "ボスカイオーラ"], ["image_id", "beb12d51aece2ab732765e1dbbf7a33f13abf1dbe811c5dd3c60119f4e5a"], ["price", 2600], ["pizza_size", 1], ["created_at", "2021-03-11 10:54:48.045651"], ["updated_at", "2021-03-11 10:54:48.045651"]]
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/pizzas_controller.rb:14
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/pizzas
+Completed 302 Found in 23ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/admin/pizzas" for 150.249.86.229 at 2021-03-11 10:54:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::PizzasController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/admin/pizzas/index.html.erb:23
+  Rendered admin/pizzas/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 121ms (Views: 118.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-11 10:54:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pSrEX4cH5lhHsWA8UYnSW+6KZ9PtABpd/nuIFtlQPVfz8qC60YQ3C50mV7Lxo821H7Wfew+YBD+DhxndB+XGOA=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 21ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-11 10:54:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 150.249.86.229 at 2021-03-11 10:55:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#about as HTML
+  Rendering customer/homes/about.html.erb within layouts/application
+  Rendered customer/homes/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 10:55:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ec2-user/environment/lets_pizza/app/controllers/customer/pizzas_controller.rb:5: syntax error, unexpected ']', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...   @q = Pizza.ransack(params[:])
+...                              ^
+/home/ec2-user/environment/lets_pizza/app/controllers/customer/pizzas_controller.rb:13: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/customer/pizzas_controller.rb:5: syntax error, unexpected ']', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/controllers/customer/pizzas_controller.rb:13: syntax error, unexpected end-of-input, expecting end
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 120ms (Views: 111.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/0586efc01fc0238e6e8caef6d7836d801c7b319a/store/beb12d51aece2ab732765e1dbbf7a33f13abf1dbe811c5dd3c60119f4e5a/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/0586efc01fc0238e6e8caef6d7836d801c7b319a/store/beb12d51aece2ab732765e1dbbf7a33f13abf1dbe811c5dd3c60119f4e5a/image" 200 8.7ms
+
+Started GET "/attachments/72c3c0d8d1ebed6011ecdfd8b3ce16d2d6c9fb22/store/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/f98ad5cd481928f348876a580dac94a7fc016b8b/store/ed592c518407ec13c9a21bd772ad188cef1965317ed80834d2a29fbff557/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/796c4ee79c58132d2d513f6aabfff1ea4616685b/store/f338e0ba255fc658f60c30773d35f9ea00e64574f7009b915763a671c0a9/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/72c3c0d8d1ebed6011ecdfd8b3ce16d2d6c9fb22/store/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" 200 6.6ms
+
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/f98ad5cd481928f348876a580dac94a7fc016b8b/store/ed592c518407ec13c9a21bd772ad188cef1965317ed80834d2a29fbff557/image" 200 5.1ms
+
+Started GET "/attachments/a548168b89439f4865896d9a47e5df86f1451ea3/store/8ebc0aa375107e705c6238a2c899532bc2a30eefeeb7e161d281b80e0ab0/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/11d5ecd902c1040794ac4afa7aa63df5d9db170e/store/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/796c4ee79c58132d2d513f6aabfff1ea4616685b/store/f338e0ba255fc658f60c30773d35f9ea00e64574f7009b915763a671c0a9/image" 200 4.4ms
+
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/a548168b89439f4865896d9a47e5df86f1451ea3/store/8ebc0aa375107e705c6238a2c899532bc2a30eefeeb7e161d281b80e0ab0/image" 200 5.6ms
+
+Started GET "/attachments/8e421f9dd0d13e640411217447b8624c76bad4a9/store/5fe889d403c41c79e97dcaff791edbbd2cb11ca29a11c286c5e3555f6d32/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Started GET "/attachments/b4707c115eb93d091e2e37f25d71933626099855/store/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/fdb87cb5c6b97e17751a57d2dd5a0ee6db073841/store/6581d772090481285c3bea6da8f317ba26b7d3c33c6dbde13631e0e91f4d/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/8e421f9dd0d13e640411217447b8624c76bad4a9/store/5fe889d403c41c79e97dcaff791edbbd2cb11ca29a11c286c5e3555f6d32/image" 200 5.0ms
+
+Started GET "/attachments/63296319a39c3ba2afcc3837ef72c1762759111a/store/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/b4707c115eb93d091e2e37f25d71933626099855/store/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" 200 9.5ms
+
+Started GET "/attachments/52b72a7c8aaf1839183c5e37a689995de3d56fe5/store/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-11 10:55:23 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/11d5ecd902c1040794ac4afa7aa63df5d9db170e/store/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" 200 18.6ms
+
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/fdb87cb5c6b97e17751a57d2dd5a0ee6db073841/store/6581d772090481285c3bea6da8f317ba26b7d3c33c6dbde13631e0e91f4d/image" 200 13.4ms
+
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/63296319a39c3ba2afcc3837ef72c1762759111a/store/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" 200 37.4ms
+
+Refile::App: [2021-03-11 10:55:23 +0000] GET "/52b72a7c8aaf1839183c5e37a689995de3d56fe5/store/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 200 83.2ms
+
+Started GET "/pizzas/4" for 150.249.86.229 at 2021-03-11 10:55:56 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 116ms (Views: 95.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/e35521f2b5dfced8ef0ed910d76c73a6835cc038/store/flll/200/200/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" for 150.249.86.229 at 2021-03-11 10:55:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-11 10:55:57 +0000] GET "/e35521f2b5dfced8ef0ed910d76c73a6835cc038/store/flll/200/200/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" 404 2.6ms
+
+Started GET "/attachments/e35521f2b5dfced8ef0ed910d76c73a6835cc038/store/flll/200/200/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" for 150.249.86.229 at 2021-03-11 10:55:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-11 10:55:58 +0000] GET "/e35521f2b5dfced8ef0ed910d76c73a6835cc038/store/flll/200/200/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" 404 0.8ms
+
+Started GET "/pizzas/3" for 150.249.86.229 at 2021-03-11 10:56:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 139ms (Views: 135.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/attachments/5aa4676681b87cbc44cca5e148491224a71765a7/store/flll/200/200/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" for 150.249.86.229 at 2021-03-11 10:56:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-11 10:56:00 +0000] GET "/5aa4676681b87cbc44cca5e148491224a71765a7/store/flll/200/200/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" 404 2.7ms
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 10:56:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.3ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.9ms)
+Started GET "/attachments/5aa4676681b87cbc44cca5e148491224a71765a7/store/flll/200/200/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" for 150.249.86.229 at 2021-03-11 10:56:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find processor: flll
+Refile::App: [2021-03-11 10:56:03 +0000] GET "/5aa4676681b87cbc44cca5e148491224a71765a7/store/flll/200/200/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" 404 2.5ms
+
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 10:57:22 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 722ms (Views: 711.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pizzas/10" for 150.249.86.229 at 2021-03-11 10:57:25 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPizza Load (0.3ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 114ms (Views: 97.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pizzas/10" for 150.249.86.229 at 2021-03-11 10:59:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 115ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/a85694bb8e4d55e811d78faa3234d9efc1f32120/store/fill/250/250/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" for 150.249.86.229 at 2021-03-11 10:59:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 10:59:57 +0000] GET "/a85694bb8e4d55e811d78faa3234d9efc1f32120/store/fill/250/250/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" 200 96.4ms
+
+Started GET "/pizzas/10" for 150.249.86.229 at 2021-03-11 11:00:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/attachments/5aaec73e7f052066c57c8bd521a82790dc1331a1/store/fill/300/300/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" for 150.249.86.229 at 2021-03-11 11:00:13 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:00:13 +0000] GET "/5aaec73e7f052066c57c8bd521a82790dc1331a1/store/fill/300/300/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" 200 89.8ms
+
+Started GET "/pizzas/10" for 150.249.86.229 at 2021-03-11 11:00:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPizza Load (0.1ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 136ms (Views: 134.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/attachments/58f3c3907279d48b925a344fc2c5d69a66698905/store/fill/300/400/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" for 150.249.86.229 at 2021-03-11 11:00:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:00:26 +0000] GET "/58f3c3907279d48b925a344fc2c5d69a66698905/store/fill/300/400/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" 200 100.2ms
+
+Started GET "/pizzas/10" for 150.249.86.229 at 2021-03-11 11:00:34 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/fa65da53582301505b3a95f133ac830e0774a1de/store/fill/400/300/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" for 150.249.86.229 at 2021-03-11 11:00:34 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:00:34 +0000] GET "/fa65da53582301505b3a95f133ac830e0774a1de/store/fill/400/300/5e82576486c8ee2166e68740a51381a7a7bd0e1fa78dfea39957a27c39a0/image" 200 90.2ms
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:00:39 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 125ms (Views: 122.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:01:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/aa38dc23d229fadb9363c341c52a5a4ab3e34cdb/store/fill/400/300/beb12d51aece2ab732765e1dbbf7a33f13abf1dbe811c5dd3c60119f4e5a/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/afaa41fe1d947331326213fb425734557e189df6/store/fill/400/300/5fe889d403c41c79e97dcaff791edbbd2cb11ca29a11c286c5e3555f6d32/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/5b14e7cf8d32fa3e4c71f68169888c2d9a7644cc/store/fill/400/300/f338e0ba255fc658f60c30773d35f9ea00e64574f7009b915763a671c0a9/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/f1be382cc90dfb01563ca29c393ebe0bcc0cda8c/store/fill/400/300/ed592c518407ec13c9a21bd772ad188cef1965317ed80834d2a29fbff557/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/cf8d9788d2709d4a72572ee7f555a9031af3294f/store/fill/400/300/8ebc0aa375107e705c6238a2c899532bc2a30eefeeb7e161d281b80e0ab0/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/afaa41fe1d947331326213fb425734557e189df6/store/fill/400/300/5fe889d403c41c79e97dcaff791edbbd2cb11ca29a11c286c5e3555f6d32/image" 200 208.0ms
+
+Started GET "/attachments/dbf7ff2fd33de61a8543b890bebb31ab80013cbf/store/fill/400/300/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/cf8d9788d2709d4a72572ee7f555a9031af3294f/store/fill/400/300/8ebc0aa375107e705c6238a2c899532bc2a30eefeeb7e161d281b80e0ab0/image" 200 215.3ms
+
+Started GET "/attachments/b81e1bc371c8889a5249aefbf1353e6086033d95/store/fill/400/300/6581d772090481285c3bea6da8f317ba26b7d3c33c6dbde13631e0e91f4d/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/dbf7ff2fd33de61a8543b890bebb31ab80013cbf/store/fill/400/300/42a0975232daa54ab98d90ff3814e792bfa3450b0a809b6a33c0d93e1eac/image" 200 204.1ms
+
+Started GET "/attachments/a8d3209e796f95a09e2a8d887d20a55deaf15c3b/store/fill/400/300/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/5b14e7cf8d32fa3e4c71f68169888c2d9a7644cc/store/fill/400/300/f338e0ba255fc658f60c30773d35f9ea00e64574f7009b915763a671c0a9/image" 200 492.0ms
+
+Started GET "/attachments/0aac01eb82c3f13f47404636519eecc6231da5fb/store/fill/400/300/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/aa38dc23d229fadb9363c341c52a5a4ab3e34cdb/store/fill/400/300/beb12d51aece2ab732765e1dbbf7a33f13abf1dbe811c5dd3c60119f4e5a/image" 200 552.3ms
+
+Started GET "/attachments/a292e934c497f8f35e96c8d65e17ab7c2514027c/store/fill/400/300/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" for 150.249.86.229 at 2021-03-11 11:01:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/f1be382cc90dfb01563ca29c393ebe0bcc0cda8c/store/fill/400/300/ed592c518407ec13c9a21bd772ad188cef1965317ed80834d2a29fbff557/image" 200 584.2ms
+
+Refile::App: [2021-03-11 11:01:07 +0000] GET "/a8d3209e796f95a09e2a8d887d20a55deaf15c3b/store/fill/400/300/d22e7cc89847fba9062fdbd4c2ff4b8925889b33c97b2b5b61dcfbf5b35b/image" 200 177.5ms
+
+Refile::App: [2021-03-11 11:01:14 +0000] GET "/0aac01eb82c3f13f47404636519eecc6231da5fb/store/fill/400/300/a98dc5d65a569778375598c6bbe107d2fe406d490fce23ecd6b5a3d1ba06/image" 200 6473.0ms
+
+Refile::App: [2021-03-11 11:01:14 +0000] GET "/b81e1bc371c8889a5249aefbf1353e6086033d95/store/fill/400/300/6581d772090481285c3bea6da8f317ba26b7d3c33c6dbde13631e0e91f4d/image" 200 6755.2ms
+
+Refile::App: [2021-03-11 11:01:14 +0000] GET "/a292e934c497f8f35e96c8d65e17ab7c2514027c/store/fill/400/300/0dbd57469d02f6422ab984057f31f811eeba88377b957cc6b1fbafbf0742/image" 200 6973.2ms
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 11:01:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 258ms (Views: 243.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:02:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (10.9ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 159ms (Views: 145.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:03:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 658ms (Views: 644.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:06:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 107ms (Views: 106.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-11 11:06:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC[0m
+  ↳ app/views/customer/pizzas/index.html.erb:23
+  Rendered customer/pizzas/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 204ms (Views: 203.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pizzas/4" for 150.249.86.229 at 2021-03-11 11:07:03 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/customer/pizzas_controller.rb:8
+  Rendering customer/pizzas/show.html.erb within layouts/application
+  Rendered customer/pizzas/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 197ms (Views: 173.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/members/sign_up" for 150.249.86.229 at 2021-03-11 11:07:11 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::RegistrationsController#new as HTML
+  Rendering customer/registrations/new.html.erb within layouts/application
+  Rendered customer/registrations/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 134ms (Views: 121.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 11:07:31 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-11 11:07:32 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 129ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
