@@ -4,6 +4,7 @@ class Customer::OrdersController < ApplicationController
   # 注文情報入力画面
   def new
     @order = Order.new
+    @deliveries = Delivery.where(member_id: current_member.id)
   end
   
   # 注文確認画面
@@ -20,29 +21,17 @@ class Customer::OrdersController < ApplicationController
       session[:name] = params[:session][:name]
       session[:telephone_number] = params[:session][:telephone_number]
     elsif params[:delivery] == "my_address"
-      session[:postal_code] = params[:delivery_postal_code]
-      session[:address] = params[:delivery_address]
-      session[:name] = params[:delivery_name]
-      session[:telephone_number] = params[:telephone_number]
+      session[:postal_code] =  params[:session][:postal_code]
+      session[:address] = params[:session][:address]
+      session[:name] = params[:session][:name]
+      session[:telephone_number] = params[:session][:telephone_number]
     end  
   end
   
   def create
-    
-    # 顧客が入力した郵便番号・氏名・電話番号・住所を、Deliveryテーブルに保存
-    @delivery = Delivery.new
-    @delivery.member_id = current_member.id
-    @delivery.payment_method = session[:payment_method]
-    @delivery.name = session[:name]
-    @delivery.postal_code = session[:postal_code]
-    @delivery.address = session[:address]
-    @delivery.telephone_number = session[:telephone_number]
-    @delivery.save
-    
     # 注文情報の保存
     @order = Order.new
     @order.member_id = current_member.id
-    @order.delivery_id = @delivery.id
     @order.delivery_postal_code = session[:postal_code]
     @order.delivery_address = session[:address]
     @order.delivery_name = session[:name]
@@ -51,7 +40,6 @@ class Customer::OrdersController < ApplicationController
     @order.billing_amount = calculate(current_member)
     @order.order_status = 0
     @order.save
-    
     # 注文商品ごとの詳細データの保存
     current_member.cart_items.each do |cart|
       @order_pizza = OrderPizza.new
