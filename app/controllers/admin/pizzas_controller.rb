@@ -3,6 +3,7 @@ class Admin::PizzasController < ApplicationController
 
   def index
     @pizzas = Pizza.all.order(created_at: :desc)
+    @pizzas = Pizza.page(params[:page]).per(9)
   end
 
   def new

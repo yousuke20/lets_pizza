@@ -6,10 +6,8 @@ class ApplicationController < ActionController::Base
   # ログアウト後のパス設定
   def after_sign_out_path_for(resource)
     if resource == :admin
-      flash[:success] = 'ログアウトしました！'
       new_admin_session_path
     elsif resource == :member
-      flash[:success] = 'ログアウトしました！'
       root_path
     end
   end
@@ -17,10 +15,8 @@ class ApplicationController < ActionController::Base
   # ログイン後のパス設定 
   def after_sign_in_path_for(resource)
     if resource.class == Admin
-      flash[:success] = 'ログインしました！'
       admin_root_path
     elsif resource.class == Member
-      flash[:success] = 'ログインしました！'
       pizzas_path
     end
   end

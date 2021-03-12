@@ -3,6 +3,7 @@ class Admin::MembersController < ApplicationController
 
   def index
     @members = Member.all.order(created_at: :desc)
+    @members = Member.page(params[:page]).per(9)
   end
   
   def show

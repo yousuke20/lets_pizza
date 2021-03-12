@@ -47,6 +47,9 @@
         </div>
       <% end %>
     </div>
+    <div class="d-flex justify-content-center">
+      <%= paginate @pizzas %>
+    </div>
   </div>
   <% if member_signed_in? %>
   <div class="shopping-cart">

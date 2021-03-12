@@ -69,6 +69,7 @@ gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
 gem 'dotenv-rails'
 gem 'ransack'
+gem 'kaminari','~> 1.2.1'
 
 group :production do
   gem 'mysql2'
