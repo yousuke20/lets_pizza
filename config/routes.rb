@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     get '/about' => 'homes#about'
     get '/shop' => 'homes#shop'
     
+    get '/pizzas/search' => 'pizzas#search'   # ピザ一覧画面での検索後に表示する、検索結果表示画面
+    post '/pizzas/search' => 'pizzas#search'  # ransackによる、ピザ一覧画面での検索処理
     resources :pizzas, only: [:index, :show]
     
     get '/members/confirm' => 'members#confirm'           # 顧客の退会確認画面

@@ -1,0 +1,33 @@
+<div class="py-5">
+<div class="container">
+  <h1><strong>検索結果</strong></h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <% @results.each do |pizza| %>
+      <div class="col my-3">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top img-fluid" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspecRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
+            <%= attachment_image_tag pizza, :image, :fill, 400, 300 %>
+          </svg>
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row">
+                <strong>商品名 : 
+                  <%= link_to pizza_path(pizza) do %>
+                    <%= pizza.pizza_name %>
+                  <% end %>  
+                </strong>
+              </div>
+              <div class="row my-1">
+                <strong>販売サイズ : <%= pizza.pizza_size %></strong>
+              </div>
+              <div class="row">
+                <strong>税込金額 : <%= ((pizza.price)*1.1).floor.to_s(:delimited) %> 円</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
