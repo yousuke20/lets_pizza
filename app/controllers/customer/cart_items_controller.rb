@@ -32,7 +32,7 @@ class Customer::CartItemsController < ApplicationController
   def destroy_all
     current_member.cart_items.destroy_all
     flash[:success] = 'カート内商品を全て削除しました！'
-    redirect_to pizzas_path
+    redirect_to cart_items_path
   end
   
   # カート内データのストロングパラメータ

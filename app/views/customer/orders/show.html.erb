@@ -55,21 +55,6 @@
         </tbody>
       </table>
     </div>
-    <div class="col-sm-4 ml-auto">
-      <h3 class="mb-4">請求情報</h3>
-      <table class="table table-hover table-bordered">
-        <tr>
-          <td class="table-warning">
-            <strong>請求金額</strong>
-          </td>
-          <td>
-            <strong>
-              <%= (@order.billing_amount).to_s(:delimited) %> 円
-            </strong>
-          </td>
-        </tr>
-      </table>  
-    </div>
   </div>
   <div class="row my-5">
     <div class="col-sm-8">
@@ -106,6 +91,27 @@
           <% end %>
         </tbody>
       </table>
+    </div>
+    <div class="col-sm-3 ml-auto">
+      <h3 class="mb-4"><strong>請求情報</strong></h3>
+      <table class="table table-bordered">
+        <thead class="table-danger">
+          <tr class="text-center">
+            <th>
+              <strong>合計請求金額</strong>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td>
+              <strong>
+                <%= (@order.billing_amount).to_s(:delimited) %> 円
+              </strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>  
     </div>
   </div>
 </div>

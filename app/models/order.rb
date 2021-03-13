@@ -1,7 +1,8 @@
 class Order < ApplicationRecord
   has_many :order_pizzas
   belongs_to :member
-  belongs_to :delivery
+  
+  validates :member_id,:delivery_postal_code,:delivery_address,:delivery_name,:delivery_telephone_number,:billing_amount,:payment_method, presence: true
   
   # enumによる支払方法、注文ステータスの管理
   enum payment_method: {現金: 0, クレジットカード: 1, 銀行振込: 2}

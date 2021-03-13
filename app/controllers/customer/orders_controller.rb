@@ -7,7 +7,7 @@ class Customer::OrdersController < ApplicationController
     @deliveries = Delivery.where(member_id: current_member.id)
   end
   
-  # 注文確認画面
+  # 注文情報入力画面で入力した内容をsessionで一時保存
   def confirm
     
     @order = current_member.orders
@@ -15,21 +15,29 @@ class Customer::OrdersController < ApplicationController
     
     session[:payment_method] = params[:payment_method]
     
+  # 「本サイトのご利用が初めての方」を選択した場合の処理
     if params[:delivery] == "new_address"
       session[:postal_code] = params[:session][:postal_code]
       session[:address] = params[:session][:address]
       session[:name] = params[:session][:name]
       session[:telephone_number] = params[:session][:telephone_number]
+      
+  # 「マイページにて配達先の登録が完了している方」を選択した場合の処理    
     elsif params[:delivery] == "my_address"
       session[:postal_code] =  params[:session][:postal_code]
       session[:address] = params[:session][:address]
       session[:name] = params[:session][:name]
       session[:telephone_number] = params[:session][:telephone_number]
+      
+  # 郵便番号、住所、宛名、電話番号のいずれかが入力されていない場合の 
+    else params[:session][:postal_code] == nil || params[:session][:address] == nil || params[:session][:name] == nil || params[:session][:telephone_number] == nil
+      flash[:danger] = "記載内容に不備があります！"
+      render :new
     end  
   end
   
   def create
-    # 注文情報の保存
+  # 注文情報の保存
     @order = Order.new
     @order.member_id = current_member.id
     @order.delivery_postal_code = session[:postal_code]
@@ -40,7 +48,8 @@ class Customer::OrdersController < ApplicationController
     @order.billing_amount = calculate(current_member)
     @order.order_status = 0
     @order.save
-    # 注文商品ごとの詳細データの保存
+    
+  # 注文商品ごとの詳細データの保存
     current_member.cart_items.each do |cart|
       @order_pizza = OrderPizza.new
       @order_pizza.order_id = @order.id
@@ -51,15 +60,15 @@ class Customer::OrdersController < ApplicationController
       @order_pizza.save
     end
     
-    # 現在ユーザーのカート内データ、及び支払方法・お届け先データの削除
-      current_member.cart_items.destroy_all
-      session.delete(:payment_method)
-      session.delete(:postal_code)
-      session.delete(:address)
-      session.delete(:name)
-      session.delete(:telephone_number)
-      flash[:success] = "注文が完了しました！"
-      redirect_to orders_complete_path
+   # 現在ユーザーのカート内データ、及び支払方法・お届け先データの削除
+    current_member.cart_items.destroy_all
+    session.delete(:payment_method)
+    session.delete(:postal_code)
+    session.delete(:address)
+    session.delete(:name)
+    session.delete(:telephone_number)
+    flash[:success] = "注文が完了しました！"
+    redirect_to orders_complete_path
   end
   
   # 注文完了画面
@@ -68,7 +77,7 @@ class Customer::OrdersController < ApplicationController
   end
   
   def index
-    @orders = Order.where(member_id: current_member.id)
+    @orders = Order.where(member_id: current_member.id).order(created_at: :desc)
   end
   
   def show
