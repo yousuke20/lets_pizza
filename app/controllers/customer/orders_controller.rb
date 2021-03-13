@@ -28,9 +28,10 @@ class Customer::OrdersController < ApplicationController
       session[:address] = params[:session][:address]
       session[:name] = params[:session][:name]
       session[:telephone_number] = params[:session][:telephone_number]
+    end  
       
-  # 郵便番号、住所、宛名、電話番号のいずれかが入力されていない場合の 
-    else params[:session][:postal_code] == nil || params[:session][:address] == nil || params[:session][:name] == nil || params[:session][:telephone_number] == nil
+  # 郵便番号、住所、宛名、電話番号のいずれかが入力されていない場合の処理
+    if params[:session][:postal_code] == nil || params[:session][:address] == nil || params[:session][:name] == nil || params[:session][:telephone_number] == nil
       flash[:danger] = "記載内容に不備があります！"
       render :new
     end  

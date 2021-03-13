@@ -53910,3 +53910,1167 @@ Processing by Customer::CartItemsController#index as HTML
 Completed 200 OK in 107ms (Views: 102.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-13 05:34:05 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.2ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  Rendered customer/orders/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 711ms (Views: 643.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-13 05:34:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 211ms (Views: 182.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-13 05:34:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  Rendered customer/orders/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 143ms (Views: 138.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:34:10 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tHfU3j3cVlt02wsghjXG0Ig//TNeCcRzp/qUAkgNKGrAmUEU/LsAZBrRixeK9GPV/O0086SCpLrduYdwU9h0Pg==", "payment_method"=>"銀行振込", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "delivery"=>"my_address", "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:97
+  Rendering customer/orders/confirm.html.erb within layouts/application
+  Rendered customer/orders/confirm.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 181ms (Views: 172.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/orders" for 150.249.86.229 at 2021-03-13 05:34:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7qW441kfOfxLlqHzUZQ6swijiTGkuveLmu2x8EXGlIrpGuo+FDF+4j+fridqltoW19yyovzMqPhQeFHHrUYqlw==", "commit"=>"注文を確定する"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:97
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:50
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:50
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/customer/orders_controller.rb:50
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/orders/complete
+Completed 302 Found in 19ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/complete" for 150.249.86.229 at 2021-03-13 05:34:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#complete as HTML
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/complete.html.erb within layouts/application
+  Rendered customer/orders/complete.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 131ms (Views: 127.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-13 05:34:30 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/customer/pizzas/index.html.erb:40
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "pizzas"[0m
+  ↳ app/views/customer/pizzas/index.html.erb:68
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:71
+  Rendered customer/pizzas/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 245ms (Views: 227.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-13 05:34:34 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 109ms (Views: 103.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-13 05:37:05 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:5
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 704ms (Views: 678.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders" for 150.249.86.229 at 2021-03-13 05:37:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."member_id" = ? ORDER BY "orders"."created_at" DESC[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/index.html.erb:21
+  Rendered customer/orders/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 162ms (Views: 150.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-13 05:37:12 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 144ms (Views: 129.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-13 05:37:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  Rendered customer/orders/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 195ms (Views: 185.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:37:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uuAe41P2GhcNogSGkgAYWS0XyFgp2HJlVWzmjQk/YCrODospkpFMKGOohLGewb1cWcUBmNNTEqwvL/X/Euo8fg==", "payment_method"=>"銀行振込", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "delivery"=>"my_address", "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:98
+  Rendering customer/orders/confirm.html.erb within layouts/application
+  Rendered customer/orders/confirm.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 121ms (Views: 112.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:37:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucviRyH8mf7DHEA96avhO6FmIJzIIxrFfTltiUoFMlu+dLCabNLe4LcVT+nSqQGefhkbD5BVRba3rI2+ooWMRg==", "payment_method"=>"銀行振込", "delivery"=>"new_address", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:98
+  Rendering customer/orders/confirm.html.erb within layouts/application
+  Rendered customer/orders/confirm.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 171ms (Views: 164.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-13 05:38:00 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 642ms (Views: 611.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/orders/new" for 150.249.86.229 at 2021-03-13 05:38:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#new as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  [1m[36mDelivery Load (0.1ms)[0m  [1m[34mSELECT "deliveries".* FROM "deliveries" WHERE "deliveries"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/views/customer/orders/new.html.erb:79
+  Rendered customer/orders/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 179ms (Views: 154.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:38:04 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NS3DCtzUcmSIeCF/AyGfjXBH0+IBj5sMqOk0NTd1n3ZBw1bAHbMkW+ZyoUgP4DqIBJUaIvsE+8XSqidHLKDDIg==", "payment_method"=>"銀行振込", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "delivery"=>"my_address", "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  Rendered customer/orders/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    76:               <div class="form-group">
+    77:                 <div class="input-group">
+    78:                   <span class="input-group-text">〒</span>
+    79:                   <%= f.select :postal_code, @deliveries.map{ |delivery| [delivery.postal_code]}, class: "form-control", include_blank: "--選択してください--" %>
+    80:                 </div>
+    81:               </div>
+    82:               <div class="form-group">
+  
+app/views/customer/orders/new.html.erb:79:in `block in _app_views_customer_orders_new_html_erb___3875907322784827810_70320348590280'
+app/views/customer/orders/new.html.erb:9:in `_app_views_customer_orders_new_html_erb___3875907322784827810_70320348590280'
+app/controllers/customer/orders_controller.rb:36:in `confirm'
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:38:18 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"27U5vKeuG7AGpVm9+yEA8TzZDJ2sWcpxFTtoccGsK0PcCmth6oBcrnKsVmnAI+BU46Y3DvQvlQLfrohGKSyVXg==", "payment_method"=>"銀行振込", "delivery"=>"new_address", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:98
+  Rendering customer/orders/new.html.erb within layouts/application
+  Rendered customer/orders/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    76:               <div class="form-group">
+    77:                 <div class="input-group">
+    78:                   <span class="input-group-text">〒</span>
+    79:                   <%= f.select :postal_code, @deliveries.map{ |delivery| [delivery.postal_code]}, class: "form-control", include_blank: "--選択してください--" %>
+    80:                 </div>
+    81:               </div>
+    82:               <div class="form-group">
+  
+app/views/customer/orders/new.html.erb:79:in `block in _app_views_customer_orders_new_html_erb___3875907322784827810_70320348772260'
+app/views/customer/orders/new.html.erb:9:in `_app_views_customer_orders_new_html_erb___3875907322784827810_70320348772260'
+app/controllers/customer/orders_controller.rb:36:in `confirm'
+Started POST "/orders/confirm" for 150.249.86.229 at 2021-03-13 05:39:34 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::OrdersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"27U5vKeuG7AGpVm9+yEA8TzZDJ2sWcpxFTtoccGsK0PcCmth6oBcrnKsVmnAI+BU46Y3DvQvlQLfrohGKSyVXg==", "payment_method"=>"銀行振込", "delivery"=>"new_address", "session"=>{"postal_code"=>"", "address"=>"", "name"=>"", "telephone_number"=>""}, "commit"=>"注文確認画面へ進む"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/orders_controller.rb:98
+  Rendering customer/orders/confirm.html.erb within layouts/application
+  Rendered customer/orders/confirm.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 661ms (Views: 626.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-13 05:39:38 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:5
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 112ms (Views: 105.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/members/1/edit" for 150.249.86.229 at 2021-03-13 05:39:40 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:9
+  Rendering customer/members/edit.html.erb within layouts/application
+  Rendered customer/members/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 169ms (Views: 163.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members/confirm" for 150.249.86.229 at 2021-03-13 05:39:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#confirm as HTML
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/confirm.html.erb within layouts/application
+  Rendered customer/members/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 159ms (Views: 154.1ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:39:43 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"EP/phqcwZvoBNWcqsGA2KeNjEJeUX6QFlhMWXlDGzhUXQLtb6h4h5HU8aP6LYtaMPBwrBMwp+3ZchvZpuEZwCA=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name", "青嶋陽介"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name_kana" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name_kana", "アオシマヨウスケ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? AND "members"."id" != ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."encrypted_password" = ? AND "members"."id" != ? LIMIT ?[0m  [["encrypted_password", "$2a$12$xEyySP/4CRq28bKuohPvK.e6uDAHSUvO0yeMjw8RhlT2cVF6kReP6"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Update (0.5ms)[0m  [1m[33mUPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["withdrawal_status", nil], ["updated_at", "2021-03-13 05:39:43.253532"], ["id", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: members.withdrawal_status may not be NULL: UPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?):
+  
+app/controllers/customer/members_controller.rb:31:in `withdrawal'
+Started GET "/members/confirm" for 150.249.86.229 at 2021-03-13 05:41:50 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::MembersController#confirm as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/confirm.html.erb within layouts/application
+  Rendered customer/members/confirm.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 689ms (Views: 659.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:41:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"neZtLrbHSiFhuk1469oCIEr5DfMWH4jDdWTTKGOoyz+aWT/z++kNPxWzQqzQ2OKFlYY2YE5p17C/8TMfiyh1Ig=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+Completed 404 Not Found in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Member with 'id'={:id=>1}):
+  
+app/controllers/customer/members_controller.rb:31:in `withdrawal'
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:42:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"neZtLrbHSiFhuk1469oCIEr5DfMWH4jDdWTTKGOoyz+aWT/z++kNPxWzQqzQ2OKFlYY2YE5p17C/8TMfiyh1Ig=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 19ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Member without an ID):
+  
+app/controllers/customer/members_controller.rb:31:in `withdrawal'
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:42:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"neZtLrbHSiFhuk1469oCIEr5DfMWH4jDdWTTKGOoyz+aWT/z++kNPxWzQqzQ2OKFlYY2YE5p17C/8TMfiyh1Ig=="}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name", "青嶋陽介"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name_kana" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name_kana", "アオシマヨウスケ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? AND "members"."id" != ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."encrypted_password" = ? AND "members"."id" != ? LIMIT ?[0m  [["encrypted_password", "$2a$12$xEyySP/4CRq28bKuohPvK.e6uDAHSUvO0yeMjw8RhlT2cVF6kReP6"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Update (0.6ms)[0m  [1m[33mUPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["withdrawal_status", nil], ["updated_at", "2021-03-13 05:42:52.315665"], ["id", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: members.withdrawal_status may not be NULL: UPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?):
+  
+app/controllers/customer/members_controller.rb:31:in `withdrawal'
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-13 05:43:41 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (13.0ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 777ms (Views: 764.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-13 05:43:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lRfPzTuvZn6srG+IKRPOOZsuCdYD4/S613NB+8itpZe0hhj/1dTceWfQHq2UGzoztv0IhsiWN5Hdpl8Nb8hizw==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (1.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 317ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-13 05:43:46 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  [1m[36mCACHE Member Load (0.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 2]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (38.0ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 177ms (Views: 167.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-13 05:43:55 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  [1m[36mCACHE Member Load (0.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 2]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (13.2ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 120ms (Views: 115.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/shop" for 150.249.86.229 at 2021-03-13 05:43:57 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#shop as HTML
+  Rendering customer/homes/shop.html.erb within layouts/application
+  Rendered customer/homes/shop.html.erb within layouts/application (0.9ms)
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cart_items" for 150.249.86.229 at 2021-03-13 05:43:58 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::CartItemsController#index as HTML
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."member_id" = ?[0m  [["member_id", 1]]
+  ↳ app/controllers/customer/cart_items_controller.rb:54
+  Rendering customer/cart_items/index.html.erb within layouts/application
+  Rendered customer/cart_items/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 147ms (Views: 136.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-13 05:43:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T6PefG3dLtyUQ2M7cLv+RYpie3HxmR2zcIRN3/TagnUTZE6wX/gLAqlMABw66QNkDSFwJrk0Z4Yqll/vEcL5ag=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 19ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-13 05:43:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-13 05:44:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/assets/image6.jpg" for 150.249.86.229 at 2021-03-13 05:44:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Started GET "/admin/assets/image8.jpg" for 150.249.86.229 at 2021-03-13 05:44:02 +0000
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image6.jpg"):
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image8.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/assets/image7.jpg" for 150.249.86.229 at 2021-03-13 05:44:02 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/admin/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/admin/sign_in" for 150.249.86.229 at 2021-03-13 05:44:08 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/hV6TXfyMacQP7oDglxgcViz1222Rn7f4wyzc62H1+JhGBR7LFxlSgJyE5BR3GkbCHwUv5jZIMWrDqca/EwfQ==", "admin"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin
+Completed 302 Found in 313ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 150.249.86.229 at 2021-03-13 05:44:09 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/homes/top.html.erb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  [1m[36mCACHE Member Load (0.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/homes/top.html.erb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("order_pizzas"."number_of_sheets") FROM "order_pizzas" WHERE "order_pizzas"."order_id" = ?[0m  [["order_id", 2]]
+  ↳ app/views/admin/homes/top.html.erb:28
+  Rendered admin/homes/top.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 158ms (Views: 153.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/members" for 150.249.86.229 at 2021-03-13 05:44:14 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering admin/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/admin/members/index.html.erb:17
+  Rendered admin/members/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 187ms (Views: 181.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/members/1" for 150.249.86.229 at 2021-03-13 05:44:16 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:10
+  Rendering admin/members/show.html.erb within layouts/application
+  Rendered admin/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 110ms (Views: 101.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/members/1/edit" for 150.249.86.229 at 2021-03-13 05:44:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/members_controller.rb:14
+  Rendering admin/members/edit.html.erb within layouts/application
+  Rendered admin/members/edit.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 179ms (Views: 172.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/admin/sign_out" for 150.249.86.229 at 2021-03-13 05:45:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"frrhjoezqf2Weu3VnphkTXcJdu/ebf3lA5YPS04+9xVA7kwaINKOUj/BND6oDANaDsvP/NM8faujVmCr6k1EVw=="}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/admin/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 150.249.86.229 at 2021-03-13 05:45:48 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:46:06 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 141ms (Views: 130.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:46:11 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+F+MbNGcz8hTtUJ41SK1Iq+jtgKOfHV5SgbaYxLbeNvcOSTjlS+mocUoknHVeOBeIZeR2ZATtoaSSDul6L2FQ==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customer/sessions_controller.rb:30
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/pizzas
+Completed 302 Found in 626ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-13 05:46:12 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/customer/pizzas/index.html.erb:40
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "pizzas"[0m
+  ↳ app/views/customer/pizzas/index.html.erb:68
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:71
+  Rendered customer/pizzas/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 140ms (Views: 132.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/members/1" for 150.249.86.229 at 2021-03-13 05:46:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:5
+  Rendering customer/members/show.html.erb within layouts/application
+  Rendered customer/members/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 127ms (Views: 120.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/members/1/edit" for 150.249.86.229 at 2021-03-13 05:46:19 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:9
+  Rendering customer/members/edit.html.erb within layouts/application
+  Rendered customer/members/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 107ms (Views: 102.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/members/confirm" for 150.249.86.229 at 2021-03-13 05:46:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#confirm as HTML
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering customer/members/confirm.html.erb within layouts/application
+  Rendered customer/members/confirm.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:46:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"j3AVfBXdq6UHfE+arWfnkFpCXsFEligqGs53OFABxN6+nIuRRQUvgiLSlDlGyfun/fyWLfjMNVoCWotgPlDrYg=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name", "青嶋陽介"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name_kana" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name_kana", "アオシマヨウスケ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? AND "members"."id" != ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."encrypted_password" = ? AND "members"."id" != ? LIMIT ?[0m  [["encrypted_password", "$2a$12$xEyySP/4CRq28bKuohPvK.e6uDAHSUvO0yeMjw8RhlT2cVF6kReP6"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Update (0.5ms)[0m  [1m[33mUPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["withdrawal_status", nil], ["updated_at", "2021-03-13 05:46:27.816459"], ["id", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.1ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: members.withdrawal_status may not be NULL: UPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?):
+  
+app/controllers/customer/members_controller.rb:31:in `withdrawal'
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:46:44 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"j3AVfBXdq6UHfE+arWfnkFpCXsFEligqGs53OFABxN6+nIuRRQUvgiLSlDlGyfun/fyWLfjMNVoCWotgPlDrYg=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Started PATCH "/members/withdrawal" for 150.249.86.229 at 2021-03-13 05:48:07 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[36mMember Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name", "青嶋陽介"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[36mMember Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name_kana" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name_kana", "アオシマヨウスケ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[36mMember Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? AND "members"."id" != ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[36mMember Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."encrypted_password" = ? AND "members"."id" != ? LIMIT ?[0m  [["encrypted_password", "$2a$12$xEyySP/4CRq28bKuohPvK.e6uDAHSUvO0yeMjw8RhlT2cVF6kReP6"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[36mMember Update (2.3ms)[0m  [1m[33mUPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["withdrawal_status", nil], ["updated_at", "2021-03-13 05:48:18.621322"], ["id", 1]]
+  ↳ app/controllers/customer/members_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:32
+Completed 500 Internal Server Error in 93751ms (ActiveRecord: 6.7ms)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: members.withdrawal_status may not be NULL: UPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?):
+  
+app/controllers/customer/members_controller.rb:32:in `withdrawal'
+Processing by Customer::MembersController#withdrawal as HTML
+  Parameters: {"authenticity_token"=>"j3AVfBXdq6UHfE+arWfnkFpCXsFEligqGs53OFABxN6+nIuRRQUvgiLSlDlGyfun/fyWLfjMNVoCWotgPlDrYg=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name", "青嶋陽介"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."full_name_kana" = ? AND "members"."id" != ? LIMIT ?[0m  [["full_name_kana", "アオシマヨウスケ"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? AND "members"."id" != ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."encrypted_password" = ? AND "members"."id" != ? LIMIT ?[0m  [["encrypted_password", "$2a$12$xEyySP/4CRq28bKuohPvK.e6uDAHSUvO0yeMjw8RhlT2cVF6kReP6"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[36mMember Update (3.6ms)[0m  [1m[33mUPDATE "members" SET "withdrawal_status" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["withdrawal_status", 0], ["updated_at", "2021-03-13 05:48:18.920200"], ["id", 1]]
+  ↳ app/controllers/customer/members_controller.rb:31
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customer/members_controller.rb:31
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 23387ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-13 05:48:47 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 787ms (Views: 779.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:48:52 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 205ms (Views: 178.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/members/assets/image6.jpg" for 150.249.86.229 at 2021-03-13 05:48:53 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+Started GET "/members/assets/image7.jpg" for 150.249.86.229 at 2021-03-13 05:48:53 +0000
+ActionController::RoutingError (No route matches [GET] "/members/assets/image6.jpg"):
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/members/assets/image8.jpg" for 150.249.86.229 at 2021-03-13 05:48:53 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image8.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:48:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QS/E/DWv4slvUElSmoG1AzJjpd9nXbLi7TKRncQAT8z7LSoFjqD02tC6WlTr/01sjCPfWR4+YIhgqpwxQW7HfQ==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customer/sessions_controller.rb:30
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/pizzas
+Completed 302 Found in 630ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-13 05:48:59 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/customer/pizzas/index.html.erb:40
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "pizzas"[0m
+  ↳ app/views/customer/pizzas/index.html.erb:68
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:71
+  Rendered customer/pizzas/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 209ms (Views: 198.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pizzas" for 150.249.86.229 at 2021-03-13 05:50:15 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Customer::PizzasController#index as HTML
+  Rendering customer/pizzas/index.html.erb within layouts/application
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT  "pizzas".* FROM "pizzas" ORDER BY "pizzas"."created_at" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/customer/pizzas/index.html.erb:40
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "pizzas"[0m
+  ↳ app/views/customer/pizzas/index.html.erb:68
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/customer/pizzas/index.html.erb:71
+  Rendered customer/pizzas/index.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 641ms (Views: 627.3ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/members/sign_out" for 150.249.86.229 at 2021-03-13 05:50:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1uQyS+GR8dfteZgTVcZidD+Za0MsqcRJzvCp554XNidVkM7SyGOJo+UzORoH0HV3FLJJ/+ReROlnoKuDQgv6yw=="}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 150.249.86.229 at 2021-03-13 05:50:17 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::HomesController#top as HTML
+  Rendering customer/homes/top.html.erb within layouts/application
+  Rendered customer/homes/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 148ms (Views: 146.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:50:20 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 147ms (Views: 144.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/assets/image6.jpg" for 150.249.86.229 at 2021-03-13 05:50:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/members/assets/image7.jpg" for 150.249.86.229 at 2021-03-13 05:50:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image7.jpg"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/members/assets/image8.jpg" for 150.249.86.229 at 2021-03-13 05:50:21 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+  
+ActionController::RoutingError (No route matches [GET] "/members/assets/image8.jpg"):
+ActionController::RoutingError (No route matches [GET] "/members/assets/image6.jpg"):
+  
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:50:26 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RfbF/+myNCE6u8lLQRx07jZ9IHuJbHpxYmTnT1CnkCw5QL4EAlasO+UcgE4+Y3rzbrSgC4AuWg5bWHwQfXVZ6g==", "member"=>{"email"=>"brotherhood7362514@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "brotherhood7362514@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customer/sessions_controller.rb:30
+Redirected to https://b41fb97fe59445458523f9446678024e.vfs.cloud9.ap-northeast-1.amazonaws.com/members/sign_in
+Filter chain halted as :reject_after_withdrawal_member rendered or redirected
+Completed 302 Found in 321ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/members/sign_in" for 150.249.86.229 at 2021-03-13 05:50:27 +0000
+Cannot render console from 150.249.86.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customer::SessionsController#new as HTML
+  Rendering customer/sessions/new.html.erb within layouts/application
+  Rendered customer/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 143ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+

@@ -10,6 +10,7 @@ class Member < ApplicationRecord
   
   validates :full_name,:full_name_kana,:email,:encrypted_password, presence: true
   validates :full_name,:full_name_kana,:email,:encrypted_password, uniqueness: true
+  
   # enumによる退会ステータスの管理
   enum withdrawal_status: {有効: true, 退会: false}
 end

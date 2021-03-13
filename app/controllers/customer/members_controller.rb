@@ -28,12 +28,13 @@ class Customer::MembersController < ApplicationController
   # ユーザーの退会処理
   def withdrawal
   # withdrawal_statusをfalseにし、「退会」ステータスに変更する
-    current_member.update(withdrawal_status: false)
+    current_member.update(withdrawal_status: "退会")
   
   # ログアウトし、session内のデータをリセットする
     reset_session
     flash[:success] = "退会処理が完了しました。"
     redirect_to root_path
+     binding.pry
   end
   
   # ユーザー情報のストロングパラメータ

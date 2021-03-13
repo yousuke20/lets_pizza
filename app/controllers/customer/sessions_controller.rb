@@ -29,7 +29,7 @@ class Customer::SessionsController < Devise::SessionsController
   def reject_after_withdrawal_member
     @member = Member.find_by(email: params[:member][:email])
     if @member
-      if @member.valid_password?(params[:member][:password]) && !@member.withdrawal_status
+      if @member.valid_password?(params[:member][:password]) && @member.withdrawal_status == "退会"
         flash[:danger] = "すでに退会しています。"
         redirect_to new_member_session_path
       end
