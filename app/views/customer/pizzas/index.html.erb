@@ -68,11 +68,4 @@
       <%= paginate @pizzas %>
     </div>
   </div>
-  <% if member_signed_in? %>
-  <div class="shopping-cart">
-    <%= link_to cart_items_path do %>
-      <i class="fas fa-cart fa-4x"></i>
-    <% end %>
-  </div>
-  <% end %>
 </div>

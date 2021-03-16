@@ -71,30 +71,30 @@
           <h6 class="text-center">
             セレクトフォームから配達先を選択してください。
           </h6>
-          <div class="card">
+          <div class="card was-validated">
             <div class="card-body">
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text">〒</span>
-                  <%= f.select :postal_code, @deliveries.map{ |delivery| [delivery.postal_code]}, class: "form-control", include_blank: "--選択してください--" %>
+                  <%= f.select :delivery_postal_code, @deliveries.map{ |delivery| [delivery.postal_code]}, class: "form-control", include_blank: "--選択してください--" %>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
-                  <%= f.select :address, @deliveries.map{ |delivery| [delivery.address]}, class: "form-control", include_blank: "--選択してください--" %>
+                  <%= f.select :delivery_address, @deliveries.map{ |delivery| [delivery.address]}, class: "form-control", include_blank: "--選択してください--" %>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="fas fa-signature"></i></span>
-                  <%= f.select :name, @deliveries.map{ |delivery| [delivery.name]}, class: "form-control", include_blank: "--選択してください--" %>
+                  <%= f.select :delivery_name, @deliveries.map{ |delivery| [delivery.name]}, class: "form-control", include_blank: "--選択してください--" %>
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
-                  <%= f.select :telephone_number, @deliveries.map{ |delivery| [delivery.telephone_number]}, class: "form-control", include_blank: "--選択してください--" %>
+                  <%= f.select :delivery_telephone_number, @deliveries.map{ |delivery| [delivery.telephone_number]}, class: "form-control", include_blank: "--選択してください--" %>
                 </div>
               </div>
             </div>

@@ -6,6 +6,11 @@
         <strong>ショッピングカート</strong>
       </h1>
     </div>
+    <% if @cart_items.count == 0 %>
+      <div class="row my-4">
+        <h2 class="text-center">カートには何も入っていません。</h2>
+      </div>
+    <% end %>
     <div class="row mt-5">
       <table class="table table-hover table-bordered">
         <thead class="thead-dark">
@@ -47,11 +52,13 @@
         </tbody>
       </table>
     </div>
-    <div class="row py-4">
-      <div class="col text-right">
-        <%= link_to "カート内商品を全て削除する", cart_items_destroy_all_path, method: :delete, class: "btn btn-danger" %>
+    <% if @cart_items.count >= 2 %>
+      <div class="row py-4">
+        <div class="col text-right">
+          <%= link_to "カート内商品を全て削除する", cart_items_destroy_all_path, method: :delete, class: "btn btn-danger" %>
+        </div>
       </div>
-    </div>
+    <% end %>
     <div class="row py-4">
       <div class="col-sm-2">
         <%= link_to "ショッピングを続ける", pizzas_path, class: "btn btn-primary" %>
@@ -59,18 +66,22 @@
       <div class="col-sm-4 ml-auto">
         <table class="table table-bordered">
           <tr>
-            <td class="table-dark">合計金額</td>
+            <td class="table-danger">
+              <strong>合計金額</strong>
+            </td>
             <td>
-              <%= @total_price.to_s(:delimited) %> 円
+              <strong><%= @total_price.to_s(:delimited) %> 円</strong>
             </td>
           </tr>
         </table>
       </div>
     </div>
-    <div class="row py-4">
-      <div class="col text-center">
-        <%= link_to "注文情報入力へ進む", new_order_path, class: "btn btn-lg btn-success" %>
+    <% if @cart_items.count >= 1 %>
+      <div class="row py-4">
+        <div class="col text-center">
+          <%= link_to "注文情報入力へ進む", new_order_path, class: "btn btn-lg btn-success" %>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>

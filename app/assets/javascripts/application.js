@@ -54,12 +54,23 @@
       });
     });
     
-    // タブメニューの設定
-    $('#tab-contents .tab[id != "tab1"]').hide();
+    // タブメニュー(about画面)の設定
+    $('#tab-contents-about .tab-about[id != "tab1"]').hide();
     
-    $('#tab-menu a').on('click',function(event){
-      $('#tab-contents .tab').hide();
-      $('#tab-menu .active').removeClass("active");
+    $('#tab-menu-about a').on('click',function(event){
+      $('#tab-contents-about .tab-about').hide();
+      $('#tab-menu-about .active').removeClass("active");
+      $(this).addClass("active");
+      $($(this).attr("href")).show();
+      event.preventDefault();
+    });
+    
+    // タブメニュー（shop画面）の設定
+    $('#tab-contents-shopt .tab-shop[id != "tab4"]').hide();
+    
+    $('#tab-menu-shop a').on('click',function(event){
+      $('#tab-contents-shop .tab-shop').hide();
+      $('#tab-menu-shop .active').removeClass("active");
       $(this).addClass("active");
       $($(this).attr("href")).show();
       event.preventDefault();
@@ -74,6 +85,7 @@
         event.preventDefault();
       });
     });
+    
     
   // Google Map APIの設定
     $(function initMap(){
@@ -137,3 +149,5 @@
     });
     
   });
+  
+  

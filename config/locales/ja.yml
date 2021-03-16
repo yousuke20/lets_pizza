@@ -6,3 +6,19 @@ ja:
     previous: "&lsaquo; 前"
     next: "次 &rsaquo;"
     truncate: "..."
+    
+  site: 
+    title: "Let's Pizza!"
+    
+  date:
+    formats:
+     default: "%m/%d/%Y"
+     long: "%Y時%m月%d日(%a)"
+     short: "%m/%d"
+  
+  time: 
+    formats:
+      default: "%m/%d/%Y %H:%M:%S"
+      long:  "%Y時%m月%d日(%a) %H時%M分%S秒 %z"
+      short: "%m.%d.%y %H:%M"
+   

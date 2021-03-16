@@ -8,5 +8,5 @@ module DeviseHelper
     when "error"
       "danger"
     end
-  end  
+  end
 end

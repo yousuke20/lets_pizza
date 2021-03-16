@@ -23,10 +23,12 @@
           <%= link_to "ピザメニューへ戻る", pizzas_path, class: "btn btn-sm btn-outline-secondary" %>
         </div>
         <% if member_signed_in? %>
-        <div class="btn-group">
-          <%= f.select :number_of_sheets, [*1..5], class: "form-control" %><span class="d-flex align-items-center mx-1">枚を</span>
-          <%= f.submit 'カートに入れる', class: "btn btn-sm btn-outline-success" %>
-        </div>
+          <div class="btn-group">
+            <%= f.select :number_of_sheets, [*1..5], class: "form-control" %><span class="d-flex align-items-center mx-1">枚を</span>
+            <button type="submit" class="btn-sm btn-outline-success">
+              <i class="fas fa-shopping-cart"></i> カートに入れる
+            </button>
+          </div>
         <% end %>
       </div>
     </ul>

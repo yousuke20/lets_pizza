@@ -39,7 +39,7 @@ class Admin::PizzasController < ApplicationController
       redirect_to edit_admin_pizza_path(@pizza)
     end
   end
-  
+
   def destroy
     @pizza = Pizza.find(params[:id])
     @pizza.destroy
@@ -47,7 +47,7 @@ class Admin::PizzasController < ApplicationController
     redirect_to admin_pizzas_path
   end
 
-#ピザ商品データのストロングパラメータ設定
+  # ピザ商品データのストロングパラメータ設定
   private
 
   def pizza_params
