@@ -7,8 +7,8 @@
       </h1>
     </div>
     <% if @cart_items.count == 0 %>
-      <div class="row my-4">
-        <h2 class="text-center">カートには何も入っていません。</h2>
+      <div class="row my-5 d-flex justify-content-center">
+        <h2>カートには何も入っていません。</h2>
       </div>
     <% end %>
     <div class="row mt-5">
@@ -60,7 +60,7 @@
       </div>
     <% end %>
     <div class="row py-4">
-      <div class="col-sm-2">
+      <div class="col-sm-3">
         <%= link_to "ショッピングを続ける", pizzas_path, class: "btn btn-primary" %>
       </div>
       <div class="col-sm-4 ml-auto">
