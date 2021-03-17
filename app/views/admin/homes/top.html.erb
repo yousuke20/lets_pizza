@@ -1,4 +1,4 @@
-<div class="container m-5">
+<div class="container my-5">
   <div class="row mb-4">
     <h1>注文履歴一覧</h1>
   </div>
@@ -25,7 +25,7 @@
                 <%= order.member.full_name %>
               </td>
               <td>
-                <%= order.order_pizzas.sum(:number_of_sheets) %>
+                <%= order.order_pizzas.sum(:number_of_sheets) %> 枚
               </td>
               <td>
                 <%= order.order_status %>

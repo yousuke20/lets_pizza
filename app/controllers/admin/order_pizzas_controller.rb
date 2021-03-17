@@ -3,7 +3,7 @@ class Admin::OrderPizzasController < ApplicationController
 
   def update
     @order_pizzas = OrderPizza.find(params[:id])
-    @order = @order_pizza.order
+    @order = @order_pizzas.order
     @order_pizzas.update(order_pizza_params)
 
     # 1つの調理ステータスを「調理完了」にすると、 注文ステータスが「配達準備中」に更新される処理
@@ -13,7 +13,7 @@ class Admin::OrderPizzasController < ApplicationController
       redirect_to admin_order_path(@order_pizzas.order.id)
 
     # 全ての調理ステータスを「調理完了」にすると、 注文ステータスが「配達準備完了」に更新される処理
-    elsif @order.order_pizza.count == @order.order_pizza.where(cooking_status: "調理完了").count
+    elsif @order.order_pizzas.count == @order.order_pizzas.where(cooking_status: "調理完了").count
       @order.update(order_status: "配達準備完了")
       flash[:success] = "全ての調理ステータスを「調理完了」に、注文ステータスを「配達準備完了」に変更しました！"
       redirect_to admin_order_path(@order_pizzas.order.id)
