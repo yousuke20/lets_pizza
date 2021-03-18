@@ -77,6 +77,7 @@ gem 'rubocop-airbnb'
 gem 'ransack'
 gem 'kaminari', '~> 1.2.1'
 gem 'listen'
+gem 'gmaps4rails'
 
 group :production do
   gem 'mysql2'
