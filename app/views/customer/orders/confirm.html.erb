@@ -1,98 +1,96 @@
-<div class="bg-light">
-  <div class="container mx-auto pt-5">
-    <div class="col">
-       <h1 class="text-center">
-        <i class="fas fa-check-square fa-2x"></i>
-        <strong>注文情報確認</strong>
-      </h1>
-    </div>
-    <%= form_with scope: :session, model: @order, url: orders_path, method: :post, local: true do |f| %>
-      <div class="row my-5 mx-auto">
-        <div class="col-sm-8">
-          <table class="table table-hover table-bordered">
-            <thead class="thead-dark">
-              <th>商品名</th>
-              <th>単価(税込)</th>
-              <th>枚数</th>
-              <th>小計</th>
-            </thead>
-            <tbody>
-            <% current_member.cart_items.each do |cart| %>
-              <tr>
-                <td>
-                  <%= cart.pizza.pizza_name %>
-                </td>
-                <td>
-                  <%= (cart.pizza.price * 1.1).floor.to_s(:delimited) %>
-                </td>
-                <td>
-                  <%= cart.number_of_sheets %>
-                </td>
-                <td>
-                  <%= ((cart.pizza.price * 1.1).floor*(cart.number_of_sheets)).to_s(:delimited) %>
-                </td>
-              </tr>
-            <% end %>  
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm-3 ml-auto">
-          <table class="table table-hover table-bordered">
-            <thead class="table-danger">
-              <tr>
-                <th class="text-center"><strong>請求金額</strong></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center">
-                  <strong><%= @total_price.to_s(:delimited) %>円</strong>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="col my-5 mx-auto">
-        <h2 class="col text-center mb-4"><strong>支払方法</strong></h2>
-        <div class="row d-flex justify-content-center">
-          <strong><%= session[:payment_method] %></strong>
-        </div>
-      </div>
-      <div class="col my-5 mx-auto">
-        <h2 class="col text-center mb-4"><strong>お届け先</strong></h2>
-        <div class="col-sm-6 mx-auto">
-          <table class="table table-borderless d-flex justify-content-center">
-            <tr>
-              <td>氏名</td>
-              <td>
-                <%= session[:name] %>
-              </td>
-            </tr>
-            <tr>
-              <td>郵便番号</td>
-              <td>
-                〒<%= session[:postal_code] %>
-              </td>
-            </tr>
-            <tr>
-              <td>住所</td>
-              <td>
-                <%= session[:address] %>
-              </td>
-            </tr>
-            <tr>
-              <td>お客様電話番号</td>
-              <td>
-                <%= session[:telephone_number] %>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="col py-5 text-center">
-        <%= f.submit "注文を確定する", class: "btn btn-lg btn-success" %>
-      </div>
-    <% end %>
+<div class="container mx-auto pt-5">
+  <div class="col">
+     <h1 class="text-center">
+      <i class="fas fa-check-square fa-2x"></i>
+      <strong>注文情報確認</strong>
+    </h1>
   </div>
+  <%= form_with scope: :session, model: @order, url: orders_path, method: :post, local: true do |f| %>
+    <div class="row my-5 mx-auto">
+      <div class="col-sm-8">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-dark">
+            <th>商品名</th>
+            <th>単価(税込)</th>
+            <th>枚数</th>
+            <th>小計</th>
+          </thead>
+          <tbody>
+          <% current_member.cart_items.each do |cart| %>
+            <tr>
+              <td>
+                <%= cart.pizza.pizza_name %>
+              </td>
+              <td>
+                <%= (cart.pizza.price * 1.1).floor.to_s(:delimited) %>
+              </td>
+              <td>
+                <%= cart.number_of_sheets %>
+              </td>
+              <td>
+                <%= ((cart.pizza.price * 1.1).floor*(cart.number_of_sheets)).to_s(:delimited) %>
+              </td>
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-3 ml-auto">
+        <table class="table table-hover table-bordered">
+          <thead class="table-danger">
+            <tr>
+              <th class="text-center"><strong>請求金額</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                <strong><%= @total_price.to_s(:delimited) %>円</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col my-5 mx-auto">
+      <h2 class="col text-center mb-4"><strong>支払方法</strong></h2>
+      <div class="row d-flex justify-content-center">
+        <strong><%= session[:payment_method] %></strong>
+      </div>
+    </div>
+    <div class="col my-5 mx-auto">
+      <h2 class="col text-center mb-4"><strong>お届け先</strong></h2>
+      <div class="col-sm-6 mx-auto">
+        <table class="table table-borderless d-flex justify-content-center">
+          <tr>
+            <td>氏名</td>
+            <td>
+              <%= session[:name] %>
+            </td>
+          </tr>
+          <tr>
+            <td>郵便番号</td>
+            <td>
+              〒<%= session[:postal_code] %>
+            </td>
+          </tr>
+          <tr>
+            <td>住所</td>
+            <td>
+              <%= session[:address] %>
+            </td>
+          </tr>
+          <tr>
+            <td>お客様電話番号</td>
+            <td>
+              <%= session[:telephone_number] %>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col py-5 text-center">
+      <%= f.submit "注文を確定する", class: "btn btn-lg btn-success" %>
+    </div>
+  <% end %>
 </div>

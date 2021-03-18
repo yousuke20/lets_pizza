@@ -9,18 +9,18 @@
 </div>
 <div class="container mt-5">
   <div class="col pb-4 text-center">
-    <h1><strong>Let's Pizza!</strong></h1>
+    <h1 class="italic-font"><strong>Let's Pizza!</strong></h1>
     <p>
       本場イタリアには、どんなピザがあるのか？<br>
       実は、あまり知らないという方も多いのではないでしょうか？<br>
       私たちと一緒に、イタリアンピザの世界へ行きましょう！！！
     </p>
   </div>
-  <h1 class="text-center pt-4 scrollanime">本サイトのサービス内容</h1>
-  <div class="row pt-5 scrollanime">
+  <h1 class="text-center mt-4 scrollanime">本サイトのサービス内容</h1>
+  <div class="row my-5 scrollanime">
     <div class="col-lg-4">
       <%= image_tag "image6.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
-      <h3 class="text-center mt-2">ピザの種類について学べる！</h3>
+      <h3 class="text-center my-4">ピザについて学べる！</h3>
       <p>
         　皆さん、少なくとも一度はピザを食べたことがあるかと思います。<br>
         　しかし、本場イタリアで主流のピザは何？と聞かれたら、「マルゲリータ、それ以外は....」となってしまう方も多いのではないでしょうか？<br>
@@ -32,31 +32,33 @@
     </div>
     <div class="col-lg-4">
       <%= image_tag "image7.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
-      <h3 class="text-center mt-2">ピザの宅配注文ができる！</h3>
+      <h3 class="text-center my-4">ピザの宅配注文ができる！</h3>
       <p>
         　Aboutページで紹介している種類のピザを宅配注文することができます！<br>
         　販売中のピザは、「ピザメニュー」から見ることができます。<br>
       </p>
       <p class="text-center">
-        <%= link_to "ピザメニュー", pizzas_path, class: "btn btn-outline-secondary" %>
+        <%= link_to "ピザメニューをみる", pizzas_path, class: "btn btn-outline-secondary" %>
       </p>
       <p>
-        <span class="shipping_cost"><strong>送料無料！</strong></span><br>
+        <h3 class="shipping_cost"><strong>送料無料！</strong></h3>
+      </p>
+      <p>
         ※ なお、宅配注文をするためには会員登録が必要です。
       </p>
       <p class="text-center">
-        <%= link_to "まずは会員登録", new_member_registration_path, class: "btn btn-outline-secondary" %>
+        <%= link_to "まずは会員登録へGo!", new_member_registration_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
     <div class="col-lg-4">
       <%= image_tag "image8.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
-      <h3 class="text-center mt-2">管理者オススメピザ専門店！</h3>
+      <h3 class="text-center my-4">本格ピザShopの情報をGET!</h3>
       <p>
         　Aboutページで紹介した種類のピザを頂くことができるレストランを、管理者視点で厳選！<br>
         　大切な人とのディナーや、パーティーなどの場所選びの参考にいかがでしょうか？<br>
       </p>
       <p class="text-center">
-        <%= link_to "管理者オススメShop", shop_path, class: "btn btn-outline-secondary" %>
+        <%= link_to "オススメShopをみる", shop_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
   </div>

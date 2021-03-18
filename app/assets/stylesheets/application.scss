@@ -22,12 +22,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 // navbarを固定した事による、header~main要素間の調整
   body {
-    padding-top: 50px;
+    padding-top: 86px;
   }
   
+// headerバーの文字サイズ調整
+  .nav-link_to {
+    font-size: 20px;
+    margin: 0 5px;
+  }
 
+// 「Let's Pizza!」の文字をイタリック表記へ変更
+  .italic-font {
+    font-style: italic;
+    font-size: 40px;
+  }
+  
 // 顧客トップ画面(#containerについては、about・shopページでも使っている)
   #container {
     height: 500px;
