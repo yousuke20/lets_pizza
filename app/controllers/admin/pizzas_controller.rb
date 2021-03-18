@@ -51,6 +51,6 @@ class Admin::PizzasController < ApplicationController
   private
 
   def pizza_params
-    params.require(:pizza).permit(:image, :pizza_name, :price, :pizza_size, :sales_status)
+    params.require(:pizza).permit(:image_id, :pizza_name, :price, :pizza_size, :sales_status)
   end
 end
