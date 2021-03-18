@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   # 顧客側画面・処理のルーティング
   devise_for :members, controllers: {
     sessions: 'customer/sessions',
@@ -36,11 +35,11 @@ Rails.application.routes.draw do
 
   # 管理者側画面・処理のルーティング
   devise_for :admins, path: 'admin',
-    controllers: {
-      sessions: 'admin/sessions',
-      passwords: 'admin/passwords',
-      registrations: 'admin/registrations',
-    }
+                      controllers: {
+                        sessions: 'admin/sessions',
+                        passwords: 'admin/passwords',
+                        registrations: 'admin/registrations',
+                      }
 
   namespace :admin do
     root to: 'homes#top'
