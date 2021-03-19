@@ -2,8 +2,7 @@ class Admin::PizzasController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @pizzas = Pizza.all.order(created_at: :desc)
-    @pizzas = Pizza.page(params[:page]).per(9)
+    @pizzas = Pizza.page(params[:page]).per(9).order(created_at: :desc)
   end
 
   def new

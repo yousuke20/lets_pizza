@@ -1,10 +1,11 @@
 class Pizza < ApplicationRecord
   has_many :cart_items, dependent: :destroy
   has_many :order_pizzas, dependent: :destroy
+  
   attachment :image
 
-  validates :pizza_name, :image_id, :price, :pizza_size, :sales_status, presence: true
-  validates :pizza_name, :image_id, uniqueness: true
+  validates :pizza_name, :price, :pizza_size, :sales_status, presence: true
+  validates :pizza_name, uniqueness: true
 
   # enumによるピザのサイズ、販売ステータスの管理
   enum sales_status: { 販売中: 0, 販売停止中: 1 }

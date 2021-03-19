@@ -1,40 +1,67 @@
 <div class="container my-5">
   <div class="col mb-4">
-    <h1><%= @member.full_name %>さんの会員詳細</h1>
+    <h1><strong><%= @member.full_name %>さんの会員詳細</strong></h1>
   </div>
-  <div class="col mb-4">
-    <div class="row">
-      <label class="col-sm-3">会員ID</label>
-      <div class="col-sm-9"><%= @member.id %></div>
+  <div class="row my-5">
+    <div class="col-sm-6">
+      <table class="table table-bordered table-hover">
+        <tbody>
+          <tr>
+            <td class="table-dark">会員ID</td>
+            <td><%= @member.id %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">氏名</td>
+            <td><%= @member.full_name %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">フリガナ</td>
+            <td><%= @member.full_name_kana %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">メールアドレス</td>
+            <td><%= @member.email %></td>
+          </tr>
+          <tr>
+            <td class="table-dark">会員ステータス</td>
+            <td><%= @member.withdrawal_status %></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="row">
-      <label class="col-sm-3">氏名</label>
-      <div class="col-sm-9"><%= @member.full_name %></div>
-    </div>
-    <div class="row">
-      <label class="col-sm-3">フリガナ</label>
-      <div class="col-sm-9"><%= @member.full_name_kana %></div>
-    </div>
-    <div class="row">
-      <label class="col-sm-3">メールアドレス</label>
-      <div class="col-sm-9"><%= @member.email %></div>
-    </div>
-    <div class="row">
-      <label class="col-sm-3">会員ステータス</label>
-      <div class="col-sm-9"><%= @member.withdrawal_status %></div>
+    <div class="col-sm-4 ml-auto">
+      <table class="table table-borderless">
+        <tbody>
+          <tr>
+            <td>
+              <%= link_to "会員情報を編集する", edit_admin_member_path(@member), class: "btn btn-success" %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= link_to "会員情報を削除する", admin_member_path(@member), method: :delete, class: "btn btn-outline-danger" %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <%= link_to admin_root_path do %>
+                <span class="btn btn-primary"><%= @member.full_name %>さんの注文履歴を見る</span>
+              <% end %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="row text-center">
     <div class="col-sm-3">
-      <%= link_to "会員情報を編集する", edit_admin_member_path(@member), class: "btn btn-success" %>
+      
     </div>
     <div class="col-sm-3">
-      <%= link_to "会員情報を削除する", admin_member_path(@member), method: :delete, class: "btn btn-outline-danger" %>
+      
     </div>
     <div class="col-sm-3">
-      <%= link_to admin_root_path do %>
-        <span class="btn btn-primary"><%= @member.full_name %>さんの注文履歴を見る</span>
-      <% end %>
+      
     </div>
   </div>
 </div>
