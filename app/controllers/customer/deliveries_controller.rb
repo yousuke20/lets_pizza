@@ -6,8 +6,12 @@ class Customer::DeliveriesController < ApplicationController
   end
 
   def create
-    @delivery = Delivery.new(delivery_create_params)
+    @delivery = Delivery.new
     @delivery.member_id = current_member.id
+    @delivery.name = params[:name]
+    @delivery.postal_code = params[:postal_code]
+    @delivery.address = params[:address]
+    @delivery.telephone_number = params[:telephone_number]
     if @delivery.save
       flash[:success] = "新規配達先情報を登録しました！"
       redirect_to deliveries_path
@@ -42,11 +46,7 @@ class Customer::DeliveriesController < ApplicationController
   # 配達先情報のストロングパラメータ
   private
 
-  def delivery_create_params
-    params.permit(:name, :postal_code, :address, :telephone_number, :member_id)
-  end
-
   def delivery_params
-    params.require(:delivery).permit(:name, :postal_code, :address, :telephone_number)
+    params.permit(:name, :postal_code, :address, :telephone_number)
   end
 end
