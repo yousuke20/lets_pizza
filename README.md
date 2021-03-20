@@ -22,7 +22,6 @@
 
   家族内での夕飯（ちょっとしたご馳走などに）、および法人向け（社内打ち上げ、パーティーなどに）のご利用を想定しております。
 
-## 設計書
 
 ### 機能一覧
   https://docs.google.com/spreadsheets/d/18g-W9Bua5Siu5KW97GyilvoOJBaYDo9rf_yhAoqBJbg/edit#gid=0
@@ -30,7 +29,8 @@
 ## 開発環境
 
 - OS：Linux(CentOS)
-- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- 言語：HTML, CSS, JavaScript, Ruby, SQL
 - フレームワーク：Ruby on Rails
 - JS ライブラリ：jQuery
 - 仮想環境：Vagrant,VirtualBox
+- 本番環境：AWS (EC2, RDS, Route53, Cloud9), Github

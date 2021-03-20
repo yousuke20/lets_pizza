@@ -18,24 +18,23 @@
   </div>
   <h1 class="text-center mt-4 scrollanime">本サイトのサービス内容</h1>
   <div class="row my-5 scrollanime">
-    <div class="col-lg-4">
+    <div class="col-lg-4 my-3">
       <%= image_tag "image6.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
       <h3 class="text-center my-4">ピザについて学べる！</h3>
       <p>
-        　皆さん、少なくとも一度はピザを食べたことがあるかと思います。<br>
-        　しかし、本場イタリアで主流のピザは何？と聞かれたら、「マルゲリータ、それ以外は....」となってしまう方も多いのではないでしょうか？<br>
-        　Aboutページでは、イタリアにはどんなピザがあるのかを紹介しています！
+      　皆さん、少なくとも一度はピザを食べたことがあるかと思います。<br>
+      　しかし、本場イタリアで主流のピザは何？と聞かれたら、「マルゲリータ、それ以外は....」となってしまう方も多いのではないでしょうか？<br>
+      　Aboutページでは、イタリアにはどんなピザがあるのかを紹介しています！
       </p>
       <p class="text-center">
         <%= link_to "About", about_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 my-3">
       <%= image_tag "image7.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
       <h3 class="text-center my-4">ピザの宅配注文ができる！</h3>
       <p>
-        　Aboutページで紹介している種類のピザを宅配注文することができます！<br>
-        　販売中のピザは、「ピザメニュー」から見ることができます。<br>
+        Aboutページで紹介している種類のピザを宅配注文することができます！販売中のピザは、「ピザメニュー」から見ることができます。
       </p>
       <p class="text-center">
         <%= link_to "ピザメニューをみる", pizzas_path, class: "btn btn-outline-secondary" %>
@@ -50,12 +49,12 @@
         <%= link_to "まずは会員登録へGo!", new_member_registration_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 my-3">
       <%= image_tag "image8.jpg", id: "assets", class: "image rounded-circle d-block mx-auto", width: "140px", height: "140px" %>
       <h3 class="text-center my-4">本格ピザShopの情報をGET!</h3>
       <p>
-        　Aboutページで紹介した種類のピザを頂くことができるレストランを、管理者視点で厳選！<br>
-        　大切な人とのディナーや、パーティーなどの場所選びの参考にいかがでしょうか？<br>
+      　Aboutページで紹介した種類のピザを頂くことができるレストランを、管理者視点で厳選！<br>
+      　大切な人とのディナーや、パーティーなどの場所選びの参考にいかがでしょうか？
       </p>
       <p class="text-center">
         <%= link_to "オススメShopをみる", shop_path, class: "btn btn-outline-secondary" %>

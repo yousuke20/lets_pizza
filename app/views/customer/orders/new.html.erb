@@ -25,7 +25,7 @@
     </div>
     <h2 class="col text-center mb-4"><strong>お届け先</strong></h2>
     <div class="row pb-5">
-      <div class="col-sm-6">
+      <div class="col-sm-6 col-lg-6 mt-3">
         <div class="form-check mb-2">
           <%= radio_button_tag :delivery, "new_address", class: "form-check-input"%>
           <label class="h5 form-check-label"><strong>本サイトのご利用が初めての方</strong></label>
@@ -62,7 +62,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 col-lg-6 mt-3">
         <div class="form-check mb-2">
           <%= radio_button_tag :delivery, "my_address", class: "form-check-input"%>
           <label class="h5 form-check-label"><strong>配達先の登録が完了している方</strong></label>
@@ -70,7 +70,7 @@
         <h6 class="text-center">
           セレクトフォームから配達先を選択してください。
         </h6>
-        <div class="card was-validated">
+        <div class="card">
           <div class="card-body">
             <div class="form-group">
               <div class="input-group">
