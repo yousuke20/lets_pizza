@@ -74,13 +74,13 @@
                 <%= order_pizza.pizza.pizza_name %>
               </td>
               <td>
-                <%= (order_pizza.price * 1.1).floor.to_s(:delimited) %>
+                <%= (order_pizza.price * 1.1).floor.to_s(:delimited) %> 円
               </td>
               <td>
-                <%= order_pizza.number_of_sheets %>
+                <%= order_pizza.number_of_sheets %> 枚
               </td>
               <td>
-                <%= ((order_pizza.price * 1.1) * (order_pizza.number_of_sheets)).floor.to_s(:delimited) %>
+                <%= ((order_pizza.price * 1.1) * (order_pizza.number_of_sheets)).floor.to_s(:delimited) %> 円
               </td>
               <td>
                 <%= form_with model: order_pizza, url: admin_order_pizza_path(order_pizza), method: :patch, local: true do |f| %>

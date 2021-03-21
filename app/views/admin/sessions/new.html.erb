@@ -1,5 +1,5 @@
 <div class="container text-center my-5">
-  <div class="col-sm-6">
+  <div class="col-sm-5 mx-auto">
     <h1 class="h2 my-5">管理者ログイン</h1>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email Address" %>
