@@ -65,6 +65,7 @@
             <th>商品</th>
             <th>単価(税込)</th>
             <th>枚数</th>
+            <th>ピザのサイズ</th>
             <th>小計</th>
             <th>調理ステータス</th>
           </tr>
@@ -80,6 +81,9 @@
             </td>
             <td>
               <%= order_pizza.number_of_sheets %> 枚
+            </td>
+            <td>
+              <%= order_pizza.pizza.pizza_size %>
             </td>
             <td>
               <%= ((order_pizza.price * 1.1)*(order_pizza.number_of_sheets)).floor.to_s(:delimited) %> 円
