@@ -2,7 +2,7 @@ class Customer::PizzasController < ApplicationController
   before_action :search_pizza, only: [:index, :search]
 
   def index
-    @pizzas = Pizza.page(params[:page]).per(9).order(created_at: :desc)
+    @pizzas = Pizza.page(params[:page]).per(6).order(created_at: :desc)
   end
 
   def search

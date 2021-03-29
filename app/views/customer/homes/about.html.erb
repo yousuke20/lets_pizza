@@ -22,15 +22,15 @@
       それぞれの種類について、見ていきましょう！
     </p>
   </div>
-  <div class="wrap scrollanime">
-    <ul id="tab-menu-about">
-      <li><a href="#tab1" class="active">トマトソース系</a></li>
-      <li><a href="#tab2" class="">トマトソース系以外</a></li>
-      <li><a href="#tab3" class="">トッピングが決まっていない</a></li>
+  <div class="wrap">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">トマトソース系</a></li>
+      <li><a href="#tab2" data-toggle="tab">トマトソース系以外</a></li>
+      <li><a href="#tab3" data-toggle="tab">トッピングが決まっていない</a></li>
     </ul>
-    <div id="tab-contents-about">
-      <div id="tab1" class="tab-about">
-        <div class="row my-5 scrollanime">
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>マルゲリータ</strong>
@@ -45,7 +45,7 @@
             <%= image_tag "margelita.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>マリナーラ</strong>
@@ -60,7 +60,7 @@
             <%= image_tag "marinara.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>ペスカトーレ</strong>
@@ -74,7 +74,7 @@
             <%= image_tag "pescatole.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>オルトナーラ</strong>
@@ -89,7 +89,7 @@
             <%= image_tag "ortolana.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>パルマ</strong>
@@ -103,7 +103,7 @@
             <%= image_tag "parma.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>サルモーネ</strong>
@@ -118,8 +118,8 @@
           </div>
         </div>
       </div>
-      <div id="tab2" class="tab-about">
-        <div class="row my-5 scrollanime">
+      <div class="tab-pane" id="tab2">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>クアトロ・フォルマッジ</strong>
@@ -134,7 +134,7 @@
             <%= image_tag "folmazzi.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>バンビーノ</strong>
@@ -148,7 +148,7 @@
             <%= image_tag "bambino.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>ビスマルク</strong>
@@ -162,7 +162,7 @@
             <%= image_tag "bismalc.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>ボスカイオーラ</strong>
@@ -175,12 +175,12 @@
           </div>
           <div class="col-md-6 my-auto">
             <%= image_tag "boscayolla.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
-            <p>出典元 : https://blog.giallozafferano.it/cucinaconmiasorella/pizza-alla-boscaiola-bianca/</p>
+            <p>出典元 : <a href="https://blog.giallozafferano.it/cucinaconmiasorella/pizza-alla-boscaiola-bianca/">https://blog.giallozafferano.it/cucinaconmiasorella/pizza-alla-boscaiola-bianca/</a></p>
           </div>
         </div>
       </div>
-      <div id="tab3" class="tab-about">
-        <div class="row my-5 scrollanime">
+      <div class="tab-pane" id="tab3">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>ビアンカ</strong>
@@ -193,10 +193,10 @@
           </div>
           <div class="col-md-6 my-auto">
             <%= image_tag "bianca.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
-            <p>出典元 : https://www.pizza-fontana.com/fs/fontana/pizza/pz044</p>
+            <p>出典元 : <a href="https://www.pizza-fontana.com/fs/fontana/pizza/pz044">https://www.pizza-fontana.com/fs/fontana/pizza/pz044</a></p>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>カプリチョーザ</strong>
@@ -208,10 +208,10 @@
           </div>
           <div class="col-md-6 my-auto">
             <%= image_tag "trattoria.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
-            <p>出典元 : https://www.atpress.ne.jp/news/66673</p>
+            <p>出典元 : <a href="https://www.atpress.ne.jp/news/66673">https://www.atpress.ne.jp/news/66673</a></p>
           </div>
         </div>
-        <div class="row my-5 scrollanime">
+        <div class="row my-5">
           <div class="col-md-6">
             <h2>
               <strong>クアトロ・スタジーニ</strong>
@@ -223,7 +223,7 @@
           </div>
           <div class="col-md-6 my-auto">
             <%= image_tag "kuatoro_stajini.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
-            <p>出典元 : https://www.olive-hitomawashi.com/column/2019/05/post-4914.html</p>
+            <p>出典元 : <a href="https://www.olive-hitomawashi.com/column/2019/05/post-4914.html">https://www.olive-hitomawashi.com/column/2019/05/post-4914.html</a></p>
           </div>
         </div>
       </div>
