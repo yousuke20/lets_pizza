@@ -54,4 +54,4 @@
 #     # password: "please use keys"
 #   }
 
-server '18.13.230.112.91(Elastic IP)', user: 'ec2-user', roles: %w(app db web)
+server '35.72.113.196(Elastic IP)', user: 'ec2-user', roles: %w(app db web)
