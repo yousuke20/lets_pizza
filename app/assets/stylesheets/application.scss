@@ -27,13 +27,6 @@
   body {
     padding-top: 86px;
   }
-  
-// headerバーの文字サイズ調整
-  .nav-link {
-    font-size: 20px;
-    padding: 0 5px;
-    line-height: 86px;
-  }
 
 // 「Let's Pizza!」の文字をイタリック表記へ変更
   .italic-font {
@@ -74,14 +67,14 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  #tab-menu-about, #tab-menu-shop {
+  .nav-tabs {
     display: flex;
   }
-  #tab-menu-about li, #tab-menu-shop li {
+  .nav-tabs li {
     list-style-type: none;
     width: calc(100%/3);
   }
-  #tab-menu-about li a, #tab-menu-shop li a {
+  .nav-tabs li a {
     color: #fff;
     text-decoration: none;
     display: block;
@@ -90,20 +83,20 @@
     background: #000;
     border: 1px solid #000;
   }
-  #tab-menu-about .active, #tab-menu-shop .active {
+  .nav-tabs li .active {
     background: #fff;
     color: #000;
   }
-  #tab-contents-about, #tab-contents-shop {
+  .tab-content {
     display: flex;
     flex-wrap: wrap;
   }
-  #tab-contents-about .tab-about, #tab-contents-shop .tab-shop {
+  .tab-contents .tab-pane {
     width: 100%;
     padding: 20px;
     background: #fff;
   }
-  #tab-contents-about p, #tab-contents-shop p {
+  .tab-content p {
     color: #000;
     line-height: 2.5;
   }

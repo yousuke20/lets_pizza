@@ -7,9 +7,11 @@
           Aboutページで紹介したピザの一覧です。<br>
           会員登録後であれば、ピザの注文が可能です！
         </p>
-        <p>
-          <a href="/members/sign_up" class="btn btn-primary my-2">会員登録する</a>
-        </p>
+        <% unless member_signed_in? %>
+          <p>
+            <a href="/members/sign_up" class="btn btn-primary my-2">会員登録する</a>
+          </p>
+        <% end %>
       </div>
     </div>
   </div>
