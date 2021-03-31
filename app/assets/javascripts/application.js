@@ -26,31 +26,9 @@
   $(function(){
     setTimeout("$('.alert').fadeOut('slow')", 2500);
   });
-  
-  // スクロールによるフェードインの設定
-  $(window).scroll(function(){
-    const scrollup = $(window).height();
-    const scrollAmount = $(window).scrollTop();
-    $('.scrollanime').each(function(){
-      const targetPosition = $(this).offset().top;
-      if (scrollAmount > targetPosition - scrollup + 50) {
-        $(this).addClass("fadeInDown");
-      }
-    });
-  });
-    
-  // 画面トップへ戻るボタンの設定
-  $(function(){
-    $('#scroll-back a').on('click',function(event){
-      $('body,html').animate({
-        scrollTop: 0
-      }, 700);
-      event.preventDefault();
-    });
-  });  
 
 // 顧客トップ画面 スライドショーの設定
-  $(function(){
+  $(document).ready(function(){
     $('#theTarget').skippr({
       transition: 'slide',
       speed: 1000,
@@ -63,14 +41,53 @@
       keyboardOnAlways: true,
       hidePrevious: false
     });
-  });  
     
-  
+  // スクロールによるフェードインの設定
+    $(window).scroll(function(){
+      const scrollup = $(window).height();
+      const scrollAmount = $(window).scrollTop();
+      $('.scrollanime').each(function(){
+        const targetPosition = $(this).offset().top;
+        if (scrollAmount > targetPosition - scrollup + 50) {
+          $(this).addClass("fadeInDown");
+        }
+      });
+    });
+    
+    // タブメニュー(about画面)の設定
+    $('#tab-contents-about .tab-about[id != "tab1"]').hide();
+    
+    $('#tab-menu-about a').on('click',function(event){
+      $('#tab-contents-about .tab-about').hide();
+      $('#tab-menu-about .active').removeClass("active");
+      $(this).addClass("active");
+      $($(this).attr("href")).show();
+      event.preventDefault();
+    });
+    
+    // タブメニュー（shop画面）の設定
+    $('#tab-contents-shopt .tab-shop[id != "tab4"]').hide();
+    
+    $('#tab-menu-shop a').on('click',function(event){
+      $('#tab-contents-shop .tab-shop').hide();
+      $('#tab-menu-shop .active').removeClass("active");
+      $(this).addClass("active");
+      $($(this).attr("href")).show();
+      event.preventDefault();
+    });
+    
+    // 画面トップへ戻るボタンの設定
+    $(function(){
+      $('#scroll-back a').on('click',function(event){
+        $('body,html').animate({
+          scrollTop: 0
+        }, 700);
+        event.preventDefault();
+      });
+    });
     
     
   // Google Map APIの設定
-  function initMap(){}  
-  
     $(function initMap(){
       
     // map1 ピッツェリア GG 吉祥寺の緯度経度
@@ -85,7 +102,7 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       
-      var marker1 = new google.maps.Marker({
+      var marker = new google.maps.Marker({
         // マーカーを置く緯度経度(お店の場所)
         position: new google.maps.LatLng(35.7008301, 139.578633),
         map: map1
@@ -104,7 +121,7 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       
-      var marker2 = new google.maps.Marker({
+      var marker = new google.maps.Marker({
         // マーカーを置く緯度経度(お店の場所)
         position: new google.maps.LatLng(35.6652052, 139.7326674),
         map: map2
@@ -123,7 +140,7 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       
-      var marker3 = new google.maps.Marker({
+      var marker = new google.maps.Marker({
         // マーカーを置く緯度経度(お店の場所)
         position: new google.maps.LatLng(35.7478447,139.6494077),
         map: map3
@@ -131,5 +148,6 @@
       
     });
     
+  });
   
   

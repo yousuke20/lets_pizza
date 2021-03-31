@@ -23,13 +23,13 @@
     </p>
   </div>
   <div class="wrap">
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab4" data-toggle="tab">ピッツェリアGG 吉祥寺</a></li>
-      <li><a href="#tab5" data-toggle="tab">FREY’s Famous Pizzeria</a></li>
-      <li><a href="#tab6" data-toggle="tab">Pizzeria da Aoki 'tappost'</a></li>
+    <ul id="tab-menu-shop">
+      <li><a href="#tab4" class="active">ピッツェリアGG 吉祥寺</a></li>
+      <li><a href="#tab5" class="">FREY’s Famous Pizzeria</a></li>
+      <li><a href="#tab6" class="">Pizzeria da Aoki 'tappost'</a></li>
     </ul>
-    <div class="tab-content mt-4">
-      <div id="tab4" class="tab-pane active">
+    <div id="tab-contents-shop">
+      <div id="tab4" class="tab-shop scrollanime">
         <div class="row">
           <h4 class="mx-auto"><strong>店内の窯で焼き上げた、オイル不使用のヘルシーピッツァのお店</strong></h4>
           <p>
@@ -43,19 +43,19 @@
           <div class="col-sm-6">
             <%= image_tag "pizzeria_gg_kichijoji.outside.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗外部の様子。店舗は地下1階にある。</p>
-            <p>出典元 : <a href="https://magazine.aruhi-corp.co.jp/reporter/0000-3224/">https://magazine.aruhi-corp.co.jp/reporter/0000-3224/</a></p>
+            <p>出典元 : https://magazine.aruhi-corp.co.jp/reporter/0000-3224/</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "pizzeria_gg_kichijoji.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗内部の様子。</p>
-            <p>出典元 : <a href="https://tabelog.com/imgview/original?id=r22546118455188">https://tabelog.com/imgview/original?id=r22546118455188</a></p>
+            <p>出典元 : https://tabelog.com/imgview/original?id=r22546118455188</p>
           </div>
         </div>
         <div class="row my-4">
           <div class="col-sm-6">
             <%= image_tag "gg_pizza.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>トマトソース系のピザから、当店看板メニューのジージー（モッツァレラ、バジリコ、ナス、リコッタ、ナポリサラミ）1600円。</p>
-            <p>出典元 : <a href="https://mrs.living.jp/musashino/town_gourmet/reporter/2932533">https://mrs.living.jp/musashino/town_gourmet/reporter/2932533</a></p>
+            <p>出典元 : https://mrs.living.jp/musashino/town_gourmet/<br>reporter/2932533</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "bismalc_pizza.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div id="tab5" class="tab-pane">
+      <div id="tab5" class="tab-shop scrollanime">
         <div class="row">
           <h4 class="mx-auto"><strong>「ナポリ発ニューヨーク経由東京」がコンセプトのピザ</strong></h4>
           <p>
@@ -139,24 +139,24 @@
           <div class="col-sm-6">
             <%= image_tag "freys_famous_pizzeria_outside.JPG", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗外部の様子。その外観はさながらニューヨークを想起させる。</p>
-            <p>出典元 : <a href="http://azunee.cocolog-nifty.com/blog/2012/07/freys-famous-pi.html">http://azunee.cocolog-nifty.com/blog/2012/07/freys-famous-pi.html</a></p>
+            <p>出典元 : http://azunee.cocolog-nifty.com/blog/2012/07/freys-famous-pi.html</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "freys_famous_pizzeria_inside.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗内部の様子。</p>
-            <p>出典元 : <a href="https://perceptivetravel.com/blog/2015/03/13/best-pizza-tokyo-freys-famous-pizzeria/">https://perceptivetravel.com/blog/2015/03/13/best-pizza-tokyo-freys-famous-pizzeria/</a></p>
+            <p>出典元 : https://perceptivetravel.com/blog/2015/03/13/best-pizza-tokyo-freys-famous-pizzeria/</p>
           </div>
         </div>
         <div class="row my-4">
           <div class="col-sm-6">
             <%= image_tag "freys_famous_pizzeria_malgerita.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>トマトソース系以外のピザから、ビスマルク（モッツァレラ、ハム、マッシュルーム、半熟卵）1500円。</p>
-            <p>出典元 : <a href="http://azunee.cocolog-nifty.com/blog/2011/11/freys-famous-pi.html">http://azunee.cocolog-nifty.com/blog/2011/11/freys-famous-pi.html</a></p>
+            <p>出典元 : http://azunee.cocolog-nifty.com/blog/2011/11/freys-famous-pi.html</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "rimg0009.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>トマトソース系のピザから、マルゲリータ 1500円。</p>
-            <p>出典元 : <a href="https://www.sumire201.com/archives/36034">https://www.sumire201.com/archives/36034</a></p>
+            <p>出典元 : https://www.sumire201.com/archives/36034</p>
           </div>
         </div>
         <div class="row my-4">
@@ -231,7 +231,7 @@
           </div>
         </div>
       </div>
-      <div id="tab6" class="tab-pane">
+      <div id="tab6" class="tab-shop scrollanime">
         <div class="row">
           <h4 class="mx-auto"><strong>ミシュランガイド2015 ビブグルマンに掲載される名店</strong></h4>
           <p>
@@ -245,24 +245,24 @@
           <div class="col-sm-6">
             <%= image_tag "aoki_outside.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗外部の様子。</p>
-            <p>出典元 : <a href="https://osietesite.com/gourmet/tokyo/yosyoku/italian/daaokitappost">https://osietesite.com/gourmet/tokyo/yosyoku/italian/daaokitappost</a></p>
+            <p>出典元 : https://osietesite.com/gourmet/<br>tokyo/yosyoku/italian/daaokitappost</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "aoki_inside.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>店舗内部の様子。</p>
-            <p>出典元 : <a href="https://job.inshokuten.com/kanto/work/detail/3895">https://job.inshokuten.com/kanto/work/detail/3895</a></p>
+            <p>出典元 : https://job.inshokuten.com/kanto/work/detail/3895</p>
           </div>
         </div>
         <div class="row my-4">
           <div class="col-sm-6">
             <%= image_tag "aoki_formajo.jpeg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>トマトソース系以外のピザから、クアトロ・フォルマッジョ 2000円。</p>
-            <p>出典元 : <a href="http://nekobuta429.blog.fc2.com/blog-entry-206.html">http://nekobuta429.blog.fc2.com/blog-entry-206.html</a></p>
+            <p>出典元 : http://nekobuta429.blog.fc2.com/blog-entry-206.html</p>
           </div>
           <div class="col-sm-6">
             <%= image_tag "aoki_malgerita.jpg", id: "assets", class: "image bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto", width: "500px", height: "500px" %>
             <p>トマトソース系のピザから、マルゲリータ 1650円。</p>
-            <p>出典元 : <a href="https://sarah30.com/station=5325?station=5325">https://sarah30.com/station=5325?station=5325</a></p>
+            <p>出典元 : https://sarah30.com/station=5325?station=5325</p>
           </div>
         </div>
         <div class="row my-4">
@@ -337,4 +337,9 @@
       </div>
     </div>
   </div>
+  <span id="scroll-back">
+    <a href="#">
+      <i class="fas fa-arrow-circle-up fa-3x"></i>
+    </a>
+  </span>
 </div>

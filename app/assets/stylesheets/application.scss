@@ -13,19 +13,26 @@
  *= require_tree .
  *= require_self
  */
-  @import "bootstrap";
-  @import 'font-awesome-sprockets';
-  @import 'font-awesome';
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 // navbarを固定した事による、header~main要素間の調整
   body {
     padding-top: 86px;
+  }
+  
+// headerバーの文字サイズ調整
+  .nav-link {
+    font-size: 20px;
+    padding: 0 5px;
+    line-height: 86px;
   }
 
 // 「Let's Pizza!」の文字をイタリック表記へ変更
@@ -62,20 +69,19 @@
     height: 500px;
     width: 100%;
   }
-  
   .wrap {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
   }
-  .nav-tabs {
+  #tab-menu-about, #tab-menu-shop {
     display: flex;
   }
-  .nav-tabs li {
+  #tab-menu-about li, #tab-menu-shop li {
     list-style-type: none;
     width: calc(100%/3);
   }
-  .nav-tabs li a {
+  #tab-menu-about li a, #tab-menu-shop li a {
     color: #fff;
     text-decoration: none;
     display: block;
@@ -84,24 +90,23 @@
     background: #000;
     border: 1px solid #000;
   }
-  .nav-tabs li .active {
+  #tab-menu-about .active, #tab-menu-shop .active {
     background: #fff;
     color: #000;
   }
-  .tab-content {
+  #tab-contents-about, #tab-contents-shop {
     display: flex;
     flex-wrap: wrap;
   }
-  .tab-contents .tab-pane {
+  #tab-contents-about .tab-about, #tab-contents-shop .tab-shop {
     width: 100%;
     padding: 20px;
     background: #fff;
   }
-  .tab-content p {
+  #tab-contents-about p, #tab-contents-shop p {
     color: #000;
     line-height: 2.5;
   }
-
   .fas {
     color: black;
   }
@@ -153,3 +158,5 @@
       transform: translate(0);
       }
   }
+                    
+  

@@ -30,18 +30,9 @@ class Customer::OrdersController < ApplicationController
     end
 
     # 郵便番号、住所、宛名、電話番号のいずれかが入力されていない場合の処理
-    if session[:postal_code] == ""
-      flash[:danger] = "郵便番号を入力してください！"
-      redirect_to new_order_path
-    elsif session[:address] == ""
-      flash[:danger] = "配達先住所を入力してください！"
-      redirect_to new_order_path
-    elsif session[:name] == ""
-      flash[:danger] = "宛名を入力してください！"
-      redirect_to new_order_path
-    elsif session[:telephone_number] == ""
-      flash[:danger] = "電話番号を入力してください！"
-      redirect_to new_order_path  
+    if session[:postal_code].nil? || session[:address].nil? || session[:name].nil? || session[:telephone_number].nil?
+      flash[:danger] = "記載内容に不備があります！"
+      render :new
     end
   end
 
