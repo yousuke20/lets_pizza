@@ -3,7 +3,7 @@
     <%= form_with model: @cart_item, url: cart_items_path(pizza_id: @pizza), method: :post, local: true do |f| %>
     <div class="text-center"> 
       <svg class="bd-placeholder-img card-img-top img-fluid" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspecRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap">
-        <%= attachment_image_tag :image, format: 'jpg', size: "400x300" %>
+        <%= attachment_image_tag @pizza, :image, format: 'jpg', size: "400x300" %>
       </svg>
     </div>
     <div class="card-body">
