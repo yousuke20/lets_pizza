@@ -1,0 +1,1 @@
+Refile.backends['store'] = Refile::Backend::FileSystem.new('/etc/lets_pizza-uploads/')
