@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  
+  
   # 顧客側画面・処理のルーティング
   devise_for :members, controllers: {
     sessions: 'customer/sessions',
