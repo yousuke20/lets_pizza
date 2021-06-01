@@ -29,8 +29,9 @@
 ## 開発環境
 
 - OS：Linux(CentOS)
-- 言語：HTML, CSS, JavaScript, Ruby, SQL
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
 - フレームワーク：Ruby on Rails
 - JS ライブラリ：jQuery
-- 仮想環境：Vagrant,VirtualBox
-- 本番環境：AWS (EC2, RDS, Route53, Cloud9), Github
+- 開発環境
+  IDE : Cloud9
+- 本番環境： AWS(EC2,RDS,Route53),Nginx, Github
